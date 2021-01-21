@@ -1,0 +1,515 @@
+html {
+    /* background-color: #F2E0D2; */
+
+    /* #B6937F; */
+    font-family: 'Rozha One', serif;
+}
+
+body {
+    margin: 0;
+    color: #5A0202;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 導覽列 */
+.menu img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: -4%;
+    /* transform: translateX(500px); */
+    /* top:-90px; */
+}
+
+.menu>a :hover{
+  border-radius: 50%;
+  background-color: black;
+}
+
+
+.menu {
+    /* border-radius: 50%; */
+   
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    position: fixed;
+    bottom: 0%;
+    /* left: 50%; */
+    /* position: relative; */
+    background-color: #B6937F;
+    /* #B6937F; */
+    /* white; */
+    /* #F2E0D2; */
+
+    /* background-image: url(./logo.PNG); */
+    /* background-size: cover;
+  background-position: center; */
+}
+
+
+nav.nav {
+  font-family: 'Futura W01 Book', 'Futura', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  line-height: 2.5em;
+  text-decoration: none;
+  vertical-align: bottom;
+  position: absolute;
+  margin-left: 35%;
+}
+
+
+ul.nav_list{
+  margin: 0;
+  padding: 0;
+}
+
+
+ul.nav_list>li {
+  list-style: none;
+  display: inline-block;
+  /* vertical-align: bottom;  */
+  display: inline-block;
+  color: black;
+}
+
+
+ul.nav_list>li div {
+  color: black;
+  padding: 10px 15px;
+  
+}
+ul.nav_list>li div:hover{
+  background-color:  rgba(242, 224, 210, 50%);
+  color: black;
+}
+
+
+
+/* 對nav list裡有a標籤的成員取消連結底線 */
+ul.nav_list>li>a {
+  text-decoration: none;
+}
+
+/* 加入詢問單 */
+ul.nav_list>li a.Add-button {
+  margin-left: 320px; 
+  10px 40px 10px 0px
+ }
+ ul.nav_list>li img{
+   width: 35px;
+   height: 30px;
+   display: inline; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+ }
+ ul.nav_list>li span {
+  color:black;
+  border: 1px solid black;
+  padding: 10px 15px 10px 40px;
+ }
+ ul.nav_list>li span:hover {
+  background-color:  rgba(242, 224, 210, 50%);
+  color: black;
+ }
+/* /加入詢問單 */
+/* /導覽列 */
+
+
+
+
+
+header{
+  height: 50px;
+}
+
+
+
+
+.A {
+
+    /* border: 1px solid blue; */
+    width: 1500px;
+    /* width: 1400px;
+    background-color: #F2E0D2; */
+    /* position: relative; */
+    margin: 0 auto;
+    /* #B6937F; */
+    /* white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+main {
+    /* border: 1px solid red; */
+    width: 1500px;
+    height: 1200px;
+    /* background-color: #F2E0D2; */
+    display: inline-block;
+    vertical-align: top;
+    /* position:relative; */
+}
+
+
+
+
+
+aside {
+    border-top: 1px solid hsla(240, 0%, 50%, 0.6);
+    border-left: 1px solid hsla(240, 0%, 50%, 0.6);
+    border-right: 1px solid hsla(240, 0%, 50%, 0.6);
+
+    width: 1500px;
+    height: 600px;
+    /* background-color: #F2E0D2; */
+    /* #D6A463; */
+    display: inline-block;
+    /* position:relative; */
+    vertical-align: top;
+}
+
+
+
+
+
+
+/* h2{
+  font-size: 50px;
+} */
+
+
+/* 點小圖換大圖 */
+.Box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.big{
+    width: 568px;
+    height: 558px;
+    border: 10px solid #5A0202;
+}
+
+.big img{
+    width: 550px;
+    height: 540px;
+
+}
+.small img{
+   width: 150px;
+   border: 2px solid #5A0202;
+}
+
+/* 為了讓她換行 */
+.Inquiry{
+  width:400px;
+}
+
+
+/* 按鈕 */
+.small span{
+  border: 1px solid #5A0202;
+  color: #5A0202;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  }
+  
+.small span:hover{
+  background: #F2E0D2; 
+ }
+
+ .small span:visited { 
+ color:#5A0202; 
+ } 
+ .small a{
+  text-decoration: none; 
+ }
+
+
+
+
+
+
+
+
+.grandpa{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+ .dad{
+   margin-top: 50px;
+   width: 1200px;
+   height: 500px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   background-color:white;
+   color:#5A0202;
+   /* 水平位移 垂直位移 顏色 */
+   box-shadow: 2px 2px 2px 2px hsla(240, 0%, 50%, 0.6);
+   border-radius: 3%; 
+ }
+ .kid{
+  width: 1200px;
+ }
+ 
+ #topic.kid {
+  height: 100px;
+  /* width: 700px; */
+ }
+ #topic h2{
+   margin: 0;
+   padding: 0px 650px 0px;
+ }
+
+ #para{
+   display: flex;
+   justify-content: space-evenly;
+ }
+#para img{
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+
+/* #sidebar
+{
+	float: right;
+	width: 300px;
+}
+
+#sidebar h2
+{
+	padding: 10px 0px 20px 0px;
+}
+
+ul.style1 li{
+list-style: none;
+} */
+
+/** PAGE */
+
+/* #page
+{
+	overflow: hidden;
+	padding: 50px 0px;
+	  
+} */
+
+/* #page .container{
+  margin: auto 200px auto 200px;
+} */
+
+/* 
+#page h2
+{
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -1px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #3B3B3A;
+} 
+
+/** CONTENT */
+
+/* #content
+{
+	float: left;
+	width: 650px;
+}
+
+#content h2
+{
+	padding: 10px 0px 20px 0px;
+	font-size: 2.50em;
+}
+
+#content img
+{
+	float: left;
+	margin-right: 40px;
+	border-radius: 120px;
+} */
+
+
+
+
+
+
+
+
+
+   /* 內容 */
+   /* div.outer{
+    border: 1px solid black;
+    width:400px;
+    height: 2695px;
+    display: flex;
+    align-items: space-between:
+    margin: auto; 
+    }
+
+    div.inner{
+    flex-wrap: wrap;
+    }
+
+
+
+    #left.inner{
+    width:1500px;
+
+    } */
+/* 
+    .box0{
+    height:1600px; 
+    border: 2px solid #C49784;
+    padding:0;
+    display: flex;
+    width: 400px;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    } */
+
+
+
+  /* 您可能有興趣的商品 */
+    
+  /* 包住圖片們的框 */
+
+        .container
+        {
+          width: 1000px;
+          margin: 0px auto;
+          display: flex;
+          justify-content: space-around;
+        }
+      .box0{
+        width: 1500px;
+        height: 600px;
+        display: flex;
+        flex-wrap: nowrap;
+        }
+    /* /包住圖片們的框 */
+
+
+
+
+    .box0 .inside{
+    /* border: 1px solid blue;   */
+    width: 330px;  
+    height: 400px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden; 
+    }
+
+    .inside {    
+    position: relative;
+    cursor: pointer;
+    }
+
+    .inside img{
+    position: absolute;
+    z-index: 1;
+    }
+        
+    .item_desc{
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    background-color: hsla(0, 0%, 0%, .4);
+    height: 50%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+    .item_desc p{
+    align-self: center;
+    }
+
+    .inside a{
+    font-family: 'Rozha One', serif;    
+    border:1px solid #5A0202;
+    color: #5A0202;
+    padding: 10px 40px 10px 40px;
+    margin: 0;
+    text-decoration: none;
+    /* list-style: none; */
+    position: absolute;
+    left:28%;
+    bottom:10%;
+    }
+    
+    .inside a:hover{
+     background: #F2E0D2;   
+    }
+    .inside a:visited { 
+    color:#5A0202; 
+    } 
+
+
+        /* 頁尾 */
+        footer {
+          height: 100px;
+          background-color: black;
+          }
+  
+          .foot{
+          letter-spacing: 0.1em;
+          font-size: 0.75em;
+          font-family: 'Abel', sans-serif;
+          color:#B6937F;
+          display: inline-flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          margin:0 ;
+          }
+  
+          .warning{
+          padding: 15px 0px 0px 280px;
+          }
+          .rights{
+          padding: 15px 0px 0px 120px;
+          }
+  
+          /* /頁尾 */

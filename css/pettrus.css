@@ -1,0 +1,560 @@
+/* 整體設定 */
+*{
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}/* 整體設定 */
+
+
+/* 輪播圖設定 */
+.slimg{
+    max-width: 1520px;
+    height:700px;
+    margin: 0;
+}
+.slick-slide img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.slick-slide {
+    width:1520px;
+}
+.slide{
+    padding: 0;
+    margin: 0;
+}
+
+.slick-track{
+    width:1520px;
+}/* 輪播圖設定 */
+
+
+
+/* 包住main和aside的大框 */
+.vessel{
+    border: 1px solid green; 
+    max-width: 1520px;
+    display: flex;
+    flex-direction: column; 
+    justify-content:stretch;
+} /* 包住main和aside的大框 */
+
+
+main.main{    
+    border: 1px solid black;
+}
+/* 標題 */
+h2.product{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 0px;
+    border-right: 0px;
+}/* 標題 */
+
+/* 商品圖頁面縮小會往下排 */
+#featured{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}/* 商品圖頁面縮小會往下排 */
+
+
+.more_info{
+    text-align: center;
+}
+/* aside在.vessel裡 */
+aside.aside{
+    max-width: 1520px;
+    height: 100px;
+    border: 1px solid  purple;
+}/* aside在.vessel裡 */
+
+
+
+
+
+
+
+
+/* footer在.vessel外, 以下是電腦螢幕和手機螢幕 */
+
+footer.footer{
+display: flex;
+justify-content: center;
+height: 100px;
+/* max-width: 1520px; */
+/* border: 1px deeppink; */
+background-color: black;
+color:#B6937F;
+font-family: 'Abel', sans-serif;
+font-size: 14px;
+text-transform: uppercase;
+}
+
+.middele_blank{
+padding: 15px;
+color: black;
+border: 1px solid white;
+}
+
+.warning{
+padding: 15px;
+/* text-align: center; */
+border: 1px solid white;
+}
+.rights{
+padding: 15px;
+border: 1px solid white;
+}
+
+
+/* footer在491時塞不下字 */
+
+@media (max-width:491px){
+.warning{
+    padding: 5px;
+}
+
+.middele_blank{
+    width: 90px;
+    padding: 6px;
+    color: black;
+    border: 1px solid white;
+}
+
+
+.rights{
+    padding: 6px;
+}
+}
+
+
+
+@media (max-width:408px){
+.warning{
+    padding:3px;
+    font-size: 12px;
+}
+
+.rights{
+   padding: 3px;
+   font-size: 12px;
+}
+
+}
+
+/* footer在491時塞不下字 */
+
+
+/* footer在.vessel外, 以上是電腦螢幕和手機螢幕 */
+
+
+
+
+
+
+
+
+/* nav在.vessel外,以下是電腦螢幕和手機螢幕 */
+
+/* 電腦螢幕 */
+nav{
+display: flex;
+flex-direction: column;
+align-items: stretch;
+position: fixed;
+bottom: 0px;
+left: 0;
+right:0px;
+border: 1px solid red;
+font-family: 'Abel', sans-serif;
+color: #5A0202;
+text-transform: uppercase;
+font-weight: bolder;
+}
+
+.stamp{
+align-self: center;
+width: 80px;
+height: 80px;
+border: 1px solid blue;   
+}
+
+.stamp > a > img{
+width: 80px;
+height: 80px;
+position: fixed ;
+bottom: 30px;
+z-index: 1;
+}
+
+ul.optbar{
+max-width: 1520px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0px;
+padding: 0;
+height: 50px;
+border: 1px solid yellow;
+background-color: #B6937F;
+position: fixed;
+right: 0;
+left:0;
+bottom: 0;
+
+}
+
+ul.optbar > li{
+list-style: none;
+border: 1px solid red;
+}
+
+ul.optbar > li:hover{   
+text-decoration: none;
+background-color: #B6937F; 
+opacity: .8;  
+color: black;
+}
+
+ul.optbar > li >a{
+text-decoration: none;
+color: #5A0202;
+}
+
+
+li.opt1{
+position: fixed;
+left: 5px;
+padding: 10px 5px 10px 5px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+
+li.opt6{
+position: fixed;
+right: 5px;
+padding: 10px 5px 10px 5px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+
+
+li.opt2{
+bottom:5px;
+padding: 15px 15px 15px 15px;
+}
+
+li.opt3{
+bottom:5px;
+padding: 15px 15px 10px 15px;
+}
+
+li.opt4{  
+bottom:5px;
+padding: 15px 15px 10px 15px;
+}
+
+li.opt5{ 
+bottom:5px;
+padding: 15px 12px 15px 12px;
+}
+/* 電腦螢幕 */
+
+
+
+/* 手機螢幕1 */
+@media (max-width:512px){
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right:0px;
+    border: 1px solid red;
+    font-family: 'Abel', sans-serif;
+    color: #5A0202;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.stamp{
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid blue;   
+}
+
+.stamp > a > img{
+    width: 80px;
+    height: 80px;
+    position: fixed ;
+    bottom: 30px;
+    z-index: 1;
+}
+
+ul.optbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: #F2E0D2;
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom: 0;
+
+}
+
+ul.optbar > li{
+    list-style: none;
+    border: 1px solid red;
+}
+
+ul.optbar > li:hover{   
+    text-decoration: none;
+    background-color: #B6937F; 
+    opacity: .8;  
+    color: black;
+}
+
+ul.optbar > li >a{
+    text-decoration: none;
+    color: #5A0202;
+}
+
+
+li.opt2{
+
+    padding: 13px 0 0 0;
+}
+
+li.opt3{
+    
+    padding: 13px 0 0 0;
+}
+
+li.opt4{  
+ 
+    padding: 13px 0 0 0;
+}
+
+li.opt5{ 
+    
+    padding: 13px 0 0 0;
+}
+
+}  /* @media screen and (max-width: 512px) *//* 手機螢幕1 */
+
+
+
+/* 手機螢幕2 */
+@media (max-width:384px){
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right:0px;
+    border: 1px solid red;
+    font-family: 'Abel', sans-serif;
+    color: #5A0202;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.stamp{
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid blue;   
+}
+
+.stamp > a > img{
+    width: 80px;
+    height: 80px;
+    position: fixed ;
+    bottom: 30px;
+    z-index: 1;
+}
+
+ul.optbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: #F2E0D2;
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom: 0;
+
+}
+
+ul.optbar > li{
+    list-style: none;
+    border: 1px solid red;
+}
+
+ul.optbar > li:hover{   
+    text-decoration: none;
+    background-color: #B6937F; 
+    opacity: .8;  
+    color: black;
+}
+
+ul.optbar > li >a{
+    text-decoration: none;
+    color: #5A0202;
+}
+
+
+li.opt2{
+
+    padding: 14px 0 0 0;
+}
+
+li.opt3{
+    
+    padding: 14px 0 0 0;
+}
+
+li.opt4{  
+ 
+    padding: 14px 0 0 0;
+}
+
+li.opt5{ 
+    
+    padding: 14px 0 0 0;
+}
+
+}  /* @media screen and (max-width: 384px) *//* 手機螢2 */
+
+
+
+
+/* 手機螢幕3 */
+@media (max-width:342px){
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right:0px;
+    border: 1px solid red;
+    font-family: 'Abel', sans-serif;
+    color: #5A0202;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.stamp{
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid blue;   
+}
+
+.stamp > a > img{
+    width: 80px;
+    height: 80px;
+    position: fixed ;
+    bottom: 30px;
+    z-index: 1;
+}
+
+ul.optbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: #F2E0D2;
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom: 0;
+
+}
+
+ul.optbar > li{
+    list-style: none;
+    border: 1px solid red;
+}
+
+ul.optbar > li:hover{   
+    text-decoration: none;
+    background-color: #B6937F; 
+    opacity: .8;  
+    color: black;
+}
+
+ul.optbar > li >a{
+    text-decoration: none;
+    color: #5A0202;
+}
+
+ 
+
+li.opt2{
+
+    padding: 14px 0 0 0;
+}
+
+li.opt3{
+    
+    padding: 14px 0 0 0;
+}
+
+li.opt4{  
+ 
+    padding: 14px 0 0 0;
+}
+
+li.opt5{ 
+    
+    padding: 14px 0 0 0;
+}
+
+}  /* @media screen and (max-width: 342px) *//* 手機螢3 */
+
+
+/* nav在.vessel外,以上是電腦螢幕和手機螢幕 */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,821 @@
+
+html, body
+{
+	height: 100%;
+
+}
+
+/* html {
+    background-color:  #F2E0D2;
+   
+  } */
+  
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	/* background: #58534F; */
+	font-family: 'Rozha One', serif;
+	font-size: 13px;
+	/* color: #4F4F4F; */
+}
+
+/* h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #322F2A;
+} */
+
+/* p, ol, ul
+{
+	margin-top: 0px;
+}
+
+ol, ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style:  none
+} */
+/* 
+p
+{   
+	line-height: 180%;
+} */
+
+strong
+{
+}
+
+
+
+a:hover{   
+	text-decoration: none;
+	
+}
+
+
+a :visited{   
+	text-decoration: none;
+	color: #0074C6;
+} 
+
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+/* a img
+{
+	border: none;
+} */
+
+img.border
+{
+}
+
+img.alignleft
+{
+	float: left;
+}
+
+img.alignright
+{
+	float: right;
+}
+
+img.aligncenter
+{
+	margin: 0px auto;
+}
+
+hr
+{
+	display: none;
+}
+
+ul.style1
+{
+}
+
+ul.style1 li
+{
+	padding: 1.50em 0em 1.90em 0em;
+	border-top: 1px solid #e8e8e8;
+}
+
+ul.style1 a
+{
+	text-decoration: none;
+	color: #6e6d6d;
+}
+
+ul.style1 a:hover
+{
+	text-decoration: underline;
+}
+
+ul.style1 .posted
+{
+	font-size: 0.90em;
+	color: #b6b6b6;
+}
+
+ul.style1 .first
+{
+	padding-top: 0em;
+	border-top: none;
+}
+
+/** WRAPPER */
+/* 
+#wrapper
+{
+	background-color:  #F2E0D2;
+} */
+
+.container
+{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+/** HEADER */
+
+/* #header-wrapper
+{
+	overflow: hidden;
+	height: 150px;
+	background: #58534F;
+	border-bottom: 1px solid #3B3B3A;
+}
+
+#header
+{
+	overflow: hidden;
+} */
+
+/** LOGO */
+
+/* #logo
+{
+	position: relative;
+	float: left;
+	width: 380px;
+	height: 100px;
+}
+
+#logo h1, #logo p
+{
+	margin: 0px;
+	line-height: normal;
+}
+
+#logo h1 a
+{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	line-height: 150px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.50em;
+} */
+
+
+
+
+/* 下面內容 */
+/** SIDEBAR */
+
+
+
+#sidebar
+{
+	float: right;
+	width: 300px;
+}
+
+#sidebar h2
+{
+	padding: 10px 0px 20px 0px;
+}
+
+
+/** PAGE */
+
+#page
+{
+	overflow: hidden;
+	padding: 50px 0px;
+	/* border-bottom: 1px solid #D8D8D8; */
+}
+
+#page h2
+{
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -1px;
+	font-family: 'Rozha One', serif;
+	font-weight: 400;
+	font-size: 2em;
+	color:#5A0202;;
+}
+
+/** CONTENT */
+
+#content
+{
+	float: left;
+	width: 650px;
+}
+
+#content h2
+{
+	padding: 10px 0px 20px 0px;
+	font-size: 2.50em;
+	font-family: 'Rozha One', serif;
+
+	
+}
+
+#content img
+{
+	float: left;
+	margin-right: 40px;
+	/* border-radius: spx; */
+	width: 360px;
+	height: 250px;
+}
+
+
+/* 上面內容 */
+
+/** Banner */
+
+#banner{
+    width: 1520px;
+    }
+
+
+/** Slider */
+
+#slider .viewer
+{
+	width: 1520px;
+	height: 700px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+	
+}
+
+
+#slider
+{
+	/* overflow: hidden; */
+	margin: 0 auto;
+	/* width: 100%; */
+	position: relative;
+	
+}
+#slider img{
+	width: 100%;
+}
+
+#slider .button
+{
+	display: inline-block;
+	background: #0074C6;
+	color: #ffffff;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	text-decoration: none;
+	outline: 0;
+	border-radius: 8px;
+	font-size: 1.25em;
+	border-bottom: solid 2px #0054A6;
+	text-shadow: 0 1px 1px #003A6C;
+}
+
+#slider .button:hover
+{
+	background: #2094E6;
+}
+
+
+
+
+#slider .viewer .reel .slide
+{
+	/* position: relative; */
+	width: 1520px;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wrapper{
+	/* height: 2700px; */
+}
+
+
+
+
+
+/* span.text-wrapper{
+	display: flex;
+	justify-content: center;
+} */
+
+
+/* banner上的字-上排 */
+#slider .viewer .reel h2
+{
+	position: absolute;
+	/* top: 230px;
+	left: 580px; */
+	padding: 0px 30px;
+	line-height: 80px;
+	background: #111111;
+	text-align: center;
+	opacity: 0.75;
+	font-weight: normal;
+	font-family: 'Rozha One', serif;
+	/* font-family: 'Abel', sans-serif; */
+	/* font-family: 'Archivo Narrow', sans-serif; */
+	color: #ffffff;
+	font-size: 4.50em;
+}
+/* /banner上的字-上排 */
+
+
+
+
+/* banner上的字-下排 */
+#slider .viewer .reel p
+{
+	position: absolute;
+	top: 400px;
+	left: 800px;
+	padding: 5px 35px;
+	/* background: red; */
+	/* text-align: center; */
+	opacity: 0.75;
+	/* font-family: 'Abel', sans-serif; */
+	/* font-family: 'Rozha One', serif; */
+	/* font-family: 'Archivo Narrow', sans-serif; */
+	font-family: 'Rozha One', serif;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 25px;
+}
+/* /banner上的字-下排 */
+
+
+
+
+
+
+#slider .indicator
+{
+	margin: 0px auto 0px auto;
+}
+
+#slider .indicator ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+
+/* 三個點點的"底"色 */
+#slider .indicator ul li
+{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999em;
+	background:gray;
+	margin: 0px 10px 10px 10px;
+	/* padding: 0px 0px 0px 0px; */
+	border-radius: 8px;
+	border-bottom: solid 1px #ffffff;
+	border-top: solid 1px #909090;
+}
+/* /三個點點的"底"色 */
+
+
+
+/* 三個點點的顏色 */
+#slider .indicator ul li.active
+{
+	background: black;
+	border-top: solid 1px #505050;
+}
+/* /三個點點的顏色 */
+
+
+
+
+#featured
+{
+	overflow: hidden;
+	/* padding: 50px 0px; */
+	border-bottom: 1px solid #D8D8D8;
+}
+
+
+
+#fbox1 {
+	/* border:2px solid red; */
+	position: relative;
+  }
+
+#fbox1 a{
+	/* border:2px solid red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#fbox1  a:hover{
+	/* border:2px solid red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 224, 210, 40%)
+}
+
+
+
+
+#fbox2{
+	/* border:2px solid red; */
+	position: relative;
+  }
+
+#fbox2  a{
+	/* border:2px sol id red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#fbox2 a:hover{
+	/* border:2px solid red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 224, 210, 40%)
+}
+
+
+
+#fbox3{
+	/* border:2px solid red; */
+	position: relative;
+  }
+
+#fbox3  a{
+	/* border:2px sol id red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#fbox3 a:hover{
+	/* border:2px solid red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 224, 210, 40%)
+}
+
+
+
+
+
+
+#fbox4{
+	/* border:2px solid red; */
+	position: relative;
+  }
+
+#fbox4  a{
+	/* border:2px sol id red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#fbox4 a:hover{
+	/* border:2px solid red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 224, 210, 40%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#featured #fbox1
+{
+	float: left;
+	width: 235px;
+	margin-right: 20px;
+}
+
+
+
+
+
+#featured #fbox2
+{
+	float: left;
+	width: 235px;
+	margin-right: 20px;
+}
+
+#featured #fbox3
+{
+	float: left;
+	width: 235px;
+}
+
+#featured #fbox4
+{
+	float: right;
+	width: 235px;
+}
+
+/* #featured img
+{
+	border-radius: 120px;
+} */
+
+#featured p
+{
+	text-align: center;
+}
+
+#featured h2
+{
+	padding: 10px 40px 10px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Rozha One', serif;
+	color:#5A0202;
+	/* border: 1px solid #5A0202; */
+	
+}
+
+#featured .title 
+{
+	margin-bottom: 40px;
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
+	font-family: 'Rozha One', serif;
+	font-size: 2.50em;
+	/* color: #3B3B3A !important; */
+}
+
+
+
+/* 按鈕 */
+
+#featured span{
+	border: 1px solid #5A0202;
+	color: #5A0202;
+	padding: 10px 40px 10px 40px;
+	align-self: center;
+}
+.More a {
+
+	/* border: 1px solid #5A0202; */
+	color: #5A0202;
+	padding: 10px 400px 10px 430px;
+	align-self: center;
+
+}
+span:hover{
+	background: #F2E0D2;
+	
+}
+
+/* /按鈕 */
+
+
+
+/* #content .identify{
+	border:1px solid #5A0202;
+	color: #5A0202;
+	padding: 10px 400px 10px 430px;
+	align-self: center;
+} */
+
+
+
+
+
+
+
+
+
+
+		/* 導覽列 */
+
+		.menu {
+			/* border-radius: 50%; */
+		
+			z-index: 2;
+			width: 1520px ;
+			height: 50px;
+			/* overflow: hidden; */
+			/* border: 1px solid red; */
+			position: fixed;
+			bottom: 0%;
+			/* left: 50%; */
+			/* position: relative; */
+			background-color: #B6937F;
+			/* #B6937F; */
+			/* white; */
+			/* #F2E0D2; */
+
+			/* background-image: url(./logo.PNG); */
+			/* background-size: cover;
+		background-position: center; */
+		}
+
+
+		.menu img {
+			width: 80px;
+			height: 80px;
+			display: inline-block;
+			position: absolute;
+			margin-left: 46%;
+			margin-top: -4%;
+			/* transform: translateX(500px); */
+			/* top:-90px; */
+		}
+
+		.menu>a :hover{
+		border-radius: 50%;
+		background-color: black;
+
+		}
+
+
+		nav.nav {
+		font-family: 'Abel', sans-serif;
+		/* font-family: 'Futura W01 Book', 'Futura', sans-serif; */
+		/* font-family: "RozhaOne", Times, serif; */
+		/* font-style: normal; */
+		font-weight:bolder;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-size: 0.85em;
+		line-height: 2.5em;
+		text-decoration: none;
+		vertical-align: bottom;
+		position: absolute;
+		margin-left: 35%;
+		}
+
+
+		ul.nav_list{
+		margin: 0;
+		padding: 0;
+		}
+
+
+		ul.nav_list>li {
+		list-style: none;
+		display: inline-block;
+		/* vertical-align: bottom;  */
+		display: inline-block;
+		/* color: #5A0202; */
+		}
+
+
+		ul.nav_list>li div {
+		color: #5A0202;
+		padding: 10px 15px;
+		
+		}
+		ul.nav_list>li div:hover{
+		background-color:  rgba(242, 224, 210, 50%);
+		color: black;
+		}
+
+
+
+		/* 對nav list裡有a標籤的成員取消連結底線 */
+		ul.nav_list>li>a {
+		text-decoration: none;
+		color: #5A0202;
+		}
+
+		/* 加入詢問單 */
+		ul.nav_list>li a.Add-button {
+		margin-left: 320px; 
+		10px 40px 10px 0px
+		}
+		ul.nav_list>li img{
+		width: 35px;
+		height: 30px;
+		display: inline; 
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		}
+		ul.nav_list>li span {
+		/* color:black; */
+		border: 2px solid #5A0202;
+		padding: 10px 15px 10px 40px;
+		}
+		ul.nav_list>li span:hover {
+		background-color:  rgba(242, 224, 210, 50%);
+		color: black;
+		}
+		/* /加入詢問單 */
+		/* /導覽列 */
+
+
+
+
+				/* 頁尾 */
+		footer {
+			height: 100px;
+			background-color: black;
+		}
+		.foot{
+			letter-spacing: 0.1em;
+			font-size: 0.75em;
+			font-family: 'Abel', sans-serif;
+			color:#B6937F;
+			display: inline-flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			margin:0 ;
+		}
+		.warning{
+			padding: 15px 0px 0px 280px;
+		}
+		
+		.rights{
+			padding: 15px 0px 0px 120px;
+			}
+		/* /頁尾 */

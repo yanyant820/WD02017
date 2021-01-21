@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New in</title>
+        <link rel="icon" href="./logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+        <style>
+
+
+                body {
+                margin: 0;
+                }
+                h1{
+                 font-size: 50px;  
+                 font-family: 'Rozha One', serif;
+                 color: #5A0202;
+                }
+
+                * {
+                box-sizing: border-box;
+                }
+
+               header{
+                height: 260px; 
+                overflow: hidden;
+                border: 15px solid #5A0202;
+                display: flex;
+                flex-wrap: nowrap;
+                background:#F2E0D2;
+               }
+
+
+                /* .banner0{
+                  border: px solid #5A0202;
+                  
+                } */
+
+                
+  
+                
+
+                .banner0 img{
+                 width:650px;
+                 height: 271px;
+                 overflow: hidden;
+                 border-right: 8px solid #5A0202; 
+                }
+
+
+
+
+
+                /* 導覽列 */
+                .menu img {
+                    width: 80px;
+                    height: 80px;
+                    display: inline-block;
+                    position: absolute;
+                    margin-left: 46%;
+                    margin-top: -4%;
+                    /* transform: translateX(500px); */
+                    /* top:-90px; */
+                }
+
+                .menu>a :hover{
+                border-radius: 50%;
+                background-color: black;
+                }
+
+                .menu {
+                    /* border-radius: 50%; */
+                
+                    z-index: 2;
+                    width: 100%;
+                    height: 50px;
+                    /* overflow: hidden; */
+                    /* border: 1px solid red; */
+                    position: fixed;
+                    bottom: 0%;
+                    /* left: 50%; */
+                    /* position: relative; */
+                    background-color: #B6937F;
+                    /* #B6937F; */
+                    /* white; */
+                    /* #F2E0D2; */
+
+                    /* background-image: url(./logo.PNG); */
+                    /* background-size: cover;
+                   background-position: center; */
+                }
+
+
+                nav.nav {
+                font-family: 'Abel', sans-serif;
+                /* font-family: 'Futura W01 Book', 'Futura', sans-serif; */
+                /* font-family: "RozhaOne", Times, serif; */ 
+                /* font-style: normal; */
+                font-weight:bolder;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                font-size: 0.85em;
+                line-height: 2.5em;
+                text-decoration: none;
+                vertical-align: bottom;
+                position: absolute;
+                margin-left: 35%;
+                }
+
+
+                ul.nav_list{
+                margin: 0;
+                padding: 0;
+                }
+
+
+                ul.nav_list>li {
+                list-style: none;
+                display: inline-block;
+                /* vertical-align: bottom;  */
+                display: inline-block;
+                /* color: #5A0202; */
+                }
+
+
+                ul.nav_list>li div {
+                color: #5A0202;
+                padding: 10px 15px;
+                
+                }
+                ul.nav_list>li div:hover{
+                background-color:  rgba(242, 224, 210, 50%);
+                color: black;
+                }
+
+
+
+                /* 對nav list裡有a標籤的成員取消連結底線 */
+                ul.nav_list>li>a {
+                text-decoration: none;
+                color: #5A0202;
+                }
+
+                /* 加入詢問單 */
+                ul.nav_list>li a.Add-button {
+                margin-left: 320px; 
+                /* 10px 40px 10px 0px */
+                }
+                ul.nav_list>li img{
+                width: 35px;
+                height: 30px;
+                display: inline; 
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                }
+                ul.nav_list>li span {
+                /* color:black; */
+                border: 2px solid #5A0202;
+                padding: 10px 15px 10px 40px;
+                }
+                ul.nav_list>li span:hover {
+                background-color:  rgba(242, 224, 210, 50%);
+                color: black;
+                }
+                /* /加入詢問單 */
+                /* /導覽列 */
+
+
+
+                /* 內容 */
+                div.outer{
+                /* border: 1px solid black; */
+                width:1500px;
+                height: 2695px;
+                display: flex;
+                justify-content: center;
+                /* vertical-align: middle; */
+                /* align-items: center; */
+                /* justify-content: center; */
+                /* 讓outer框框置中,以上此處無效 */
+                margin: auto; 
+                flex-direction: row-reverse; 
+                }
+
+                div.inner{
+                /* border: 1px solid blue; */
+                /* flex-grow: 1; */
+                flex-wrap: wrap;
+                }
+
+
+                /* #left{
+                background: #5A0202; !important
+                } */
+
+                /* #left img{
+                width: 600px;
+                height: 760px;
+                } */
+
+
+                .box0{
+                /* border: 2px solid #C49784; */
+                padding:0;
+                display: flex;
+                width: 1012px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                justify-content: space-around;
+                }
+
+
+                .box0 .inside{
+                /* border: 1px solid blue;   */
+                width: 330px;  
+                height: 500px;
+                border-radius: 0px 0px 10px 10px;
+                overflow: hidden; 
+                }
+            
+                .inside {    
+                position: relative;
+                cursor: pointer;
+                }
+
+                .inside img{
+                position: absolute;
+                z-index: 1;
+                }
+                    
+                .item_desc{
+                font-family: 'Abel', sans-serif;
+                font-size: 16px;
+                background-color: hsla(0, 0%, 0%, .4);
+                height: 50%;
+                width: 100%;
+                color: white;
+                text-align: center;
+                padding: 5px 0;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                }
+
+                .item_desc p{
+                align-self: center;
+                }
+
+                .inside a{
+                font-family: 'Rozha One', serif;    
+                border:1px solid #5A0202;
+                color: #5A0202;
+                padding: 10px 40px 10px 40px;
+                margin: 0;
+                text-decoration: none;
+                /* list-style: none; */
+                position: absolute;
+                left:28%;
+                bottom:10%;
+                }
+                
+                .inside a:hover{
+                 background: #F2E0D2;   
+                }
+                .inside a:visited { 
+                color:#5A0202; 
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                div.outer{
+                /* border: 1px solid black; */
+                width:1500px;
+                height: 1200px;
+                display: flex;
+                justify-content: center;
+                /* vertical-align: middle; */
+                /* align-items: center; */
+                /* justify-content: center; */
+                /* 讓outer框框置中,以上此處無效 */
+                margin: auto; 
+                flex-direction: row-reverse; 
+                }
+
+                div.inner{
+                /* border: 1px solid blue; */
+                /* flex-grow: 1; */
+                flex-wrap: wrap;
+                }
+
+
+                /* #left{
+                background: #5A0202; !important
+                } */
+
+                /* #left img{
+                width: 600px;
+                height: 760px;
+                } */
+
+
+                .box0{
+                /* border: 2px solid #C49784; */
+                padding:0;
+                display: flex;
+                width: 1012px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                justify-content: space-around;
+                }
+
+
+                .box0 .inside{
+                /* border: 1px solid blue;   */
+                width: 330px;  
+                height: 500px;
+                border-radius: 0px 0px 10px 10px;
+                overflow: hidden; 
+                }
+            
+                .inside {    
+                position: relative;
+                cursor: pointer;
+                }
+
+                .inside img{
+                position: absolute;
+                z-index: 1;
+                }
+                    
+                .item_desc{
+                font-family: 'Abel', sans-serif;
+                font-size: 16px;
+                background-color: hsla(0, 0%, 0%, .4);
+                height: 50%;
+                width: 100%;
+                color: white;
+                text-align: center;
+                padding: 5px 0;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                }
+
+                .item_desc p{
+                align-self: center;
+                }
+
+                .inside a{
+                font-family: 'Rozha One', serif;    
+                border:1px solid #5A0202;
+                color: #5A0202;
+                padding: 10px 40px 10px 40px;
+                margin: 0;
+                text-decoration: none;
+                /* list-style: none; */
+                position: absolute;
+                left:28%;
+                bottom:10%;
+                }
+                
+                .inside a:hover{
+                 background: #F2E0D2;   
+                }
+                .inside a:visited { 
+                color:#5A0202; 
+                }
+
+           
+                /* /內容 */
+
+
+
+
+
+
+
+
+                
+
+
+                /* 頁尾 */
+                footer {
+                height: 100px;
+                background-color: black;
+                }
+
+                .foot{
+                letter-spacing: 0.1em;
+                font-size: 0.75em;
+                font-family: 'Abel', sans-serif;
+                color:#B6937F;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin:0 ;
+                }
+
+                .warning{
+                padding: 15px 0px 0px 280px;
+                }
+                .rights{
+                padding: 15px 0px 0px 120px;
+                }
+
+                /* /頁尾 */
+
+
+        </style>
+    </head>
+    <body>
+
+
+        
+        
+        
+                <header>
+
+                  <div class="banner0"> <img src="./cellar0.jpg" alt=""> </div>
+                  <div><h1><br>PENTHOUSE</h1></div>
+               
+                  
+                </header>
+        
+  
+        
+        
+                    <!-- 內容 -->
+                  
+                    <div class="outer">
+                      
+        
+                      <div class="inner" id="left">
+                        <h1>New in</h1>
+                
+                        <div class="box0">
+        
+                          <div class="inside" id="in1">
+                                <img src="./transparent0.png" alt="">
+
+                                <div class="item_desc"><p>1989<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>                     
+                          </div>
+        
+        
+        
+                          <div class="inside" id="in2">
+                                <img src="./transparent1.png" alt="">
+
+                                <div class="item_desc"><p>1990<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>
+                          </div>
+        
+        
+        
+                          <div class="inside" id="in3">
+                                <img src="./transparent2.png" alt="">
+
+                                <div class="item_desc"><p>1991<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>
+                          </div>
+
+
+
+                          <div class="inside" id="in1">
+                            <img src="./transparent0.png" alt="">
+
+                            <div class="item_desc"><p>1989<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>                     
+                      </div>
+    
+    
+    
+                      <div class="inside" id="in2">
+                            <img src="./transparent1.png" alt="">
+
+                            <div class="item_desc"><p>1990<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>
+                      </div>
+    
+    
+    
+                      <div class="inside" id="in3">
+                            <img src="./transparent2.png" alt="">
+
+                            <div class="item_desc"><p>1991<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>
+                      </div>
+      
+        
+        
+                        </div> <!-- box0 -->
+              
+        
+                      </div> <!-- left -->
+                    </div> <!-- outer -->
+                    <!-- /內容  -->
+
+
+
+
+
+                            
+                    <!-- 內容 -->
+                  
+                    <div class="outer">
+                      
+        
+                      <div class="inner" id="left">
+                        <h1>You might like</h1>
+                
+                        <div class="box0">
+        
+                          <div class="inside" id="in1">
+                                <img src="./transparent0.png" alt="">
+
+                                <div class="item_desc"><p>1989<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>                     
+                          </div>
+        
+        
+        
+                          <div class="inside" id="in2">
+                                <img src="./transparent1.png" alt="">
+
+                                <div class="item_desc"><p>1990<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>
+                          </div>
+        
+        
+        
+                          <div class="inside" id="in3">
+                                <img src="./transparent2.png" alt="">
+
+                                <div class="item_desc"><p>1991<br>Rainy.Rainy.Rainy.</p>    
+                                </div>
+
+                                <a href="./Details.html">See More</a>
+                          </div>
+
+
+
+                          <div class="inside" id="in1">
+                            <img src="./transparent0.png" alt="">
+
+                            <div class="item_desc"><p>1989<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>                     
+                      </div>
+    
+    
+    
+                      <div class="inside" id="in2">
+                            <img src="./transparent1.png" alt="">
+
+                            <div class="item_desc"><p>1990<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>
+                      </div>
+    
+    
+    
+                      <div class="inside" id="in3">
+                            <img src="./transparent2.png" alt="">
+
+                            <div class="item_desc"><p>1991<br>Rainy.Rainy.Rainy.</p>    
+                            </div>
+
+                            <a href="./Details.html">See More</a>
+                      </div>
+      
+        
+        
+                        </div> <!-- box0 -->
+              
+        
+                      </div> <!-- left -->
+                    </div> <!-- outer -->
+                    <!-- /內容  -->
+
+
+        
+
+        
+                         
+        
+
+
+
+
+
+
+
+                <!-- 導覽列 -->
+                  <div class="menu">
+                    <a href="./Carousel.html"><div class="home"><img src="./logo.PNG"></div></a>
+        
+                    <nav class="nav">
+                     
+                      <ul class="nav_list">
+        
+                        <li>
+                        <a href="./Lafitte.html"title="Lafitte"><div>Lafitte</div></a>
+                        </li>
+                        <li>
+                          <a href="./Pettrus.html"title="Pettrus"><div>Pettrus</div></a>
+                        </li>
+                        <li>
+                          <a href=""title="Moutton"><div>Moutton</div></a>
+                        </li>
+                        <li>
+                          <a href="./Gift Baskets.html"title="Gift Box"><div>Gift</div></a>
+                        </li>
+                        <li>
+                          <a href="./Contact us.html"title="Contact u."><div>contact us</div></a>
+                        </li>
+        
+                        
+                        <li>
+                          <a class="Add-button" href="" title="Add to bag and get inquiry."><img src="./bag.png"><span>Inquiry</span></a>              
+                        </li>
+                       
+        
+                      </ul>
+                    </nav>
+                  </div
+        
+                    <!-- /導覽列  -->
+        
+        
+        
+                   
+                      <footer>
+                        <div class="foot">
+                          <div class="warning">The Abuse Of Alcohol Is Dangerous For Your Health, Drink Responsibly.</div>
+                          
+                          <div class="rights">© Copyright 2021.For Educational Purposes Only.</div>  
+                        </div>
+                      </footer>
+                  </div>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>點小圖秀大圖</title>
+<style>
+
+    .Box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .big{
+        width: 400px;
+        border: 10px solid #5A0202;
+    }
+	.small img{
+		width:50px;
+	}
+</style>
+</head>
+
+
+<body>
+
+        <div class="Box">
+            <div class="big">
+            <img  id="large" src="./gift0.webp">
+            </div>
+
+            <div class="small">
+                <img src="./gift0.webp" >
+                <img src="./gift1.png" >
+                <img src="./gift0.webp" >
+                <img src="./gift1.png" >
+                <hr>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+        function showLarge(e){
+        document.getElementById("large").src = e.target.src;
+
+        }
+
+        function init(){
+            let imgs = document.querySelectorAll(".small img");
+            for(let i=0; i<imgs.length; i++){
+                imgs[i].onclick = showLarge;
+            }
+        }
+
+        window.onload = init;
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+html {
+  background-color:  #F2E0D2;
+  /* url(./BGI1.png) */
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 導覽列 */
+.menu img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: -4%;
+    /* transform: translateX(500px); */
+    /* top:-90px; */
+}
+
+.menu>a :hover{
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.menu {
+    /* border-radius: 50%; */
+   
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    position: fixed;
+    bottom: 0%;
+    /* left: 50%; */
+    /* position: relative; */
+    background-color: #B6937F;
+    /* #B6937F; */
+    /* white; */
+    /* #F2E0D2; */
+
+    /* background-image: url(./logo.PNG); */
+    /* background-size: cover;
+  background-position: center; */
+}
+
+
+nav.nav {
+  font-family: 'Abel', sans-serif;
+  /* font-family: 'Futura W01 Book', 'Futura', sans-serif; */
+  /* font-family: "RozhaOne", Times, serif; */
+  
+  /* font-style: normal; */
+  font-weight:bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85em;
+  line-height: 2.5em;
+  text-decoration: none;
+  vertical-align: bottom;
+  position: absolute;
+  margin-left: 35%;
+}
+
+
+ul.nav_list{
+  margin: 0;
+  padding: 0;
+}
+
+
+ul.nav_list>li {
+  list-style: none;
+  display: inline-block;
+  /* vertical-align: bottom;  */
+  display: inline-block;
+  /* color: #5A0202; */
+}
+
+
+ul.nav_list>li div {
+  color: #5A0202;
+  padding: 10px 15px;
+  
+}
+ul.nav_list>li div:hover{
+  background-color:  rgba(242, 224, 210, 50%);
+  color: black;
+}
+
+
+
+/* 對nav list裡有a標籤的成員取消連結底線 */
+ul.nav_list>li>a {
+  text-decoration: none;
+  color: #5A0202;
+}
+
+/* 加入詢問單 */
+ul.nav_list>li a.Add-button {
+  margin-left: 320px; 
+  10px 40px 10px 0px
+ }
+ ul.nav_list>li img{
+   width: 35px;
+   height: 30px;
+   display: inline; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+ }
+ ul.nav_list>li span {
+  /* color:black; */
+  border: 2px solid #5A0202;
+  padding: 10px 15px 10px 40px;
+ }
+ ul.nav_list>li span:hover {
+  background-color:  rgba(242, 224, 210, 50%);
+  color: black;
+ }
+/* /加入詢問單 */
+/* /導覽列 */
+
+
+
+/* 內容 */
+div.outer{
+  border: 1px solid black;
+  width:1500px;
+  height: 2695px;
+  display: flex;
+  /* vertical-align: middle; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* 讓outer框框置中,以上此處無效 */
+  margin: auto; 
+  flex-direction: row-reverse; 
+}
+
+div.inner{
+  /* border: 1px solid blue; */
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+}
+
+
+#left{
+  background: #5A0202; !important
+}
+
+#left img{
+  width: 600px;
+  height: 760px;
+}
+
+
+.box0{
+  border: 2px solid #C49784;
+  padding:0;
+  display: flex;
+  width: 724px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 125px;
+}
+
+
+.box0 .inside{
+  /* border: 1px solid blue;   */
+  width: 360px;  
+  height: 360px;
+}
+
+
+
+
+#in1{
+  background-image: url("./css/items2.png");
+  border-radius: 10px;
+  overflow: hidden;
+}
+.inside {
+  position: relative;
+  cursor: pointer;
+  text-align:center;
+ 
+}
+.on-top {
+  position: absolute;
+  display: block;
+  width: 360px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  top: 0px;
+  left: 0px;  
+}
+
+.on-top p{
+  border: 1px #5A0202 solid;
+  margin: 150px 100px  150px 100px;
+  font-size: 20px;
+  font-family: 'Rozha One', serif;
+  color: #5A0202;
+}
+
+.on-top:hover {
+  opacity: 1;
+}
+
+.item_desc{
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  background-color: hsla(0, 0%, 0%, .4);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+#in2{
+  background-image: url("./css/items1.png");
+  border-radius: 10px;
+  overflow: hidden;
+}
+#in3{
+  background-image: url("./css/items3.png");
+  border-radius: 10px;
+  overflow: hidden;
+}
+#in4{
+  background-image: url("./css/items4.png");
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+#right .box0{  
+  border: 3px solid#B6937F;
+  width:800px;
+  height:650px;
+  margin-top: 26px;
+}
+#right h2{
+  font-family: 'Rozha One', serif;
+  margin: 0;
+  padding-left: 50px;
+  color: #5A0202;
+  font-size: 50px;
+  letter-spacing: 0.15em;
+}
+
+#right h3{
+  font-family: 'Rozha One', serif;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 250px;
+  color: #5A0202;
+  font-size: 50px;
+  letter-spacing: 0.15em;
+}
+#right .text0{
+  font-family: 'Abel', sans-serif;
+  /* font-family: 'Futura W01 Book', 'Futura', sans-serif; */
+  color:#B6937F;
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background: whitesmoke;
+  width:600px;
+  height:480px;
+  margin: auto;
+  margin-left: 95px;
+  margin-top: 35px;
+}
+
+
+#right .text1{
+  font-family: 'Abel', sans-serif;
+  color:#B6937F;
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background: whitesmoke;
+  width:600px;
+  height:480px;
+  margin: auto;
+  margin-left: 95px;
+  margin-top: 40px;
+}
+
+#right .text1 img{
+  width:600px;
+  height:480px;
+}
+
+
+#right .text2{
+  font-family: 'Abel', sans-serif;
+  color:#B6937F;
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background: whitesmoke;
+  width:600px;
+  height:480px;
+  margin: auto;
+  margin-left: 95px;
+  margin-top: 40px;
+}
+
+#right .text2 img{
+  width:600px;
+  height:480px;
+}
+
+
+
+
+/* /內容 */
+
+
+
+
+
+
+
+
+/* 頁尾 */
+footer {
+  height: 100px;
+  background-color: black;
+}
+
+.foot{
+  letter-spacing: 0.1em;
+  font-size: 0.75em;
+  font-family: 'Abel', sans-serif;
+  color:#B6937F;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin:0 ;
+}
+
+.warning{
+  padding: 15px 0px 0px 280px;
+
+}
+
+.rights{
+  padding: 15px 0px 0px 120px;
+
+  }
+
+/* /頁尾 */
