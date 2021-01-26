@@ -59,46 +59,17 @@ aside.aside{
 
 
 
-
  section.left{
     display: flex;
     flex-direction: column;
     width:600px;
     height:700px;
     /* background-image:url("./img/tparty.jpg"); */
-    /* background-image: url(../img/tparty.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size:contain; */
+    background-image: url(../img/tparty.png);
+    background-repeat: no-repeat;
     border:  1px solid black;
-    
+    /* overflow: hidden; */
 }
-
-
-
-
-
-
-#tparty img {
-    width:100%;
-    height:100%;
-    border: 1px solid blue;
-    /* object-fit:cover; */
-}
-
-
-
-#tdesc{
-    width:100%;
-    height:50%;
-    border: 1px deeppink;
-    background-color: black;
-}
-
-
-
-
-
-
 section.right{
     display: flex;
     flex-direction: column;
@@ -108,7 +79,20 @@ section.right{
     /* background-color: white; */
     opacity: .8;
     border: 5px deeppink;
-    padding: 5px;
+    padding: 20px;
+}
+#tparty{
+    width:600px;
+    height:400px;
+    border: 1px solid blue;
+
+}
+
+#tdesc{
+    width:600px;
+    height:300px;
+    border: 1px deeppink;
+    background-color: black;
 }
 
 
@@ -147,28 +131,12 @@ input[type="text"]{
     border: 1px solid #BAA079;
     outline:none;
     padding:5px 15px;
+
 }
 
 .online3 > span{
     color: #BAA079;
 }
-
-
-.online5 > a{
-    border: 1px solid #BAA079;
-    color: #BAA079;
-    background-color: white;
-    font-size: 16px;
-    padding:2.5px 69.5px 2.5px 69.5px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.online5 > a:hover{
-    color: white;
-    background-color: #BAA079;
-}
-
 
 
 input[type="text1"]{
@@ -180,6 +148,107 @@ input[type="text1"]{
     padding:5px 15px
 
 }
+
+input[type="submit"]{
+    
+    width: 100%;
+    border: 1px solid #BAA079;
+    outline:none;
+    color: #BAA079;
+    background-color: white;
+    font-size: 16px;
+    padding:2.5px 2.5px;
+    caret-color:#BAA079;
+}
+
+
+
+
+/* 
+.online{
+    display: flex;
+    border: 1px solid #BAA079;
+    color: #BAA079;
+    
+}
+
+span
+
+.online > p{
+    border-left: 1px solid #BAA079;
+    margin: 0;
+    padding-top:4px;
+}
+
+{padding:5px 15px; caret-color:#BAA079; color: #BAA079;
+    cursor:pointer; outline: #BAA079; border: #BAA079;
+}
+input[type="text2"]{padding:5px 15px; caret-color:#BAA079; color: #BAA079;
+    cursor:pointer; outline:none; border: #BAA079;
+} */
+
+
+
+/* input[type="submit"]{padding:5px 15px; border:0 none; outline: none; color: #BAA079;
+    cursor:pointer;
+} */
+
+/* background:#BAA079; opacity: 0.5; */
+
+
+
+/* button.btn_toggle{
+    width: 50%;
+}
+
+div.parent_flex{
+    border: 1px solid black;
+    display: flex;
+  }
+  
+  div.left_block{
+    border: 1px solid red;
+    overflow: hidden;
+    transition: flex-basis 1s;
+    
+    flex-basis: 0;
+  }
+  div.left_block.-on{
+    flex-basis: 50%;
+  }
+  div.left_block div.inner_content{
+    width: 600px;
+    height: 300px;
+  }
+  div.left_block div.inner_content img{
+    width: 500px;
+    height: 300px;
+  }
+  
+
+  div.right_block{
+    border: 1px solid blue;
+    flex-grow: 1;
+  }
+
+    
+  div.right_block img{
+    border: 1px solid blue;
+    flex-grow: 1;
+
+
+    width: 200px;
+    height: 300px;
+  }  */
+
+
+
+
+/* aside在.vessel裡 */
+
+
+
+
 
 
 
@@ -228,7 +297,13 @@ input[type="text1"]{
         margin-top: 0;
     }
 
- 
+    .more_info{  /* 包住按鈕a的外框div與按鈕a重合 */
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 2.5px 0px 2.5px 0px;
+        /* border: 1px solid #BAA079; */
+    }
+    
     .more_info > a{  /* 按鈕a */
         margin-bottom: 10px;
         padding: 2.5px 25px 2.5px 25px;
@@ -238,6 +313,8 @@ input[type="text1"]{
     }
 
     .more_info > a:hover{
+        margin-bottom: 10px;
+        padding: 5px 25px 5px 25px;
         text-decoration: none;
         border: 1px solid #BAA079;
         background-color: #BAA079;
@@ -287,6 +364,7 @@ footer.footer{
     padding: 15px;
     /* border: 1px solid white; */
 }
+
 
  @media (max-width:820px){
     .warning{
@@ -475,7 +553,7 @@ ul.optbar > li{
 
 ul.optbar li:hover{   
     text-decoration: none;
-    background-color:#9D7200;
+    background-color: black;
 }
 
 ul.optbar > li > a{
@@ -587,14 +665,14 @@ li.opt5{
     
     ul.optbar > li:hover{   
         text-decoration: none;
-        background-color:#9D7200; 
-        /* opacity: .8;   */
-        /* color: black; */
+        background-color: white; 
+        opacity: .8;  
+        color: black;
     }
     
     ul.optbar > li >a{
         text-decoration: none;
-        color: white;
+        color:black;
     }
     
     
@@ -701,14 +779,14 @@ li.opt5{
     
     ul.optbar > li:hover{   
         text-decoration: none;
-        background-color: #9D7200;
-        /* opacity: .8;  
-        color: black; */
+        background-color: white; 
+        opacity: .8;  
+        color: black;
     }
     
     ul.optbar > li >a{
         text-decoration: none;
-        color: white;
+        color: black;
     }
 
     
@@ -814,14 +892,14 @@ li.opt5{
     
     ul.optbar > li:hover{   
         text-decoration: none;
-        background-color: #9D7200;
-        /* opacity: .8;  
-        color: black; */
+        background-color: white; 
+        opacity: .8;  
+        color: black;
     }
     
     ul.optbar > li >a{
         text-decoration: none;
-        color:white;
+        color: black;
     }
     
      
