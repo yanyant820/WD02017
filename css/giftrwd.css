@@ -150,25 +150,33 @@ aside.aside{
     margin-left: 20px;
   }
   
-  
-  .small span {
-    border: 1px solid #5A0202;
-    color: #5A0202;
-    padding: 10px 40px 10px 40px;
-  
+  .small a {
+    width: 82px;
+    height: 28px;;
+    border: 1px solid #BAA079;
+    color: #BAA079;
+    padding: 8px 43px 8px 43px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .small span:hover {
-    background: #F2E0D2;
+  .small a:hover {
+    text-decoration: none;
+    border: 1px solid #BAA079;
+    background-color: #BAA079;
+    color:white;
   }
   
   .small span:visited {
     color: #5A0202;
   }
+  /* small > i{
+      margin: 0px;
+      padding: 0px;
+  } */
   
-  .small a {
-    text-decoration: none;
-  }
 
 
 
