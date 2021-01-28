@@ -136,6 +136,7 @@
 /* | */
 @media screen and (max-width: 480px) {
   .jotform-form {
+	
     padding: 10px 0;
   }
 }
@@ -286,21 +287,7 @@
   font-size: 13px;
   font-weight: normal;
 }
-/*
-	TODO: Significant improvement possibility:
 
-	following import statement is not required in design mode,
-	but it should be inside the exported css of current design, in the form itself
-	when it is shown to people. Being of this here, causing re-drawn problems.
-	we should find a way to only include this in css send while saving current design
-
-	see prepareModel4Save for implementation for @buttonFontType
-*/
-/*
-& when ( @buttonFontType = google ) {
-	@import (css) "@{buttonFontLink}";
-}
-*/
 
 .header-text{
 display: flex;

@@ -13,9 +13,9 @@
     <!-- 字體 -->
 
 
-    <title>Gift Basket</title>
+    <title>Brand</title>
     <!-- 套用 -->
-	<link rel="stylesheet" href="./css/gift.css">
+	<link rel="stylesheet" href="./css/brand.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <!-- 套用 -->
@@ -36,7 +36,7 @@
 <body>
 
 
-	<header.slider> <!-- header就是輪播圖而已 -->
+	<header> <!-- header就是輪播圖而已 -->
 		
 		<div class="slider">
 			<div class="slimg"><a href=""><img src="./img/banner3.jpeg" alt=""></a></div>
@@ -47,57 +47,64 @@
 	</header> <!-- header就是輪播圖而已 -->
 
 
-	<header.thinbanner>
-		<!-- <img src="./"> -->
-		<h1 class="ml2">Gift Basket</h1>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-	</header>
-
-
 
   	
 	<div class="vessel"> <!-- 包住main和aside的大框  -->
-		<!-- <h2 class="chateau">HOT LINKS</h2> -->
+		<h2 class="chateau">HOT LINKS</h2>
 		<!-- <button type="button" class="btn_toggle">Wine Tarot</button> -->
 		<aside class="aside">
 			<section class="left">	<!-- 左section -->
-			
-				
-                    <div class="big">
-                         <div class="bigimg"><img  id="large" src="./img/gift0.webp"></div>
-                    </div>
-
- 
-				
-				
-
+				<!-- <div id="tparty">左上</div> -->
+				<div id="tdesc">左下</div>
 				
 		    </section> <!-- 左section -->
 
 
 
+		    <section class="right"> <!-- 右section -->
+			    <div class="h3title">
+				   <h3>WINE NOT? <br> Online Tarot</h3>
+			    </div>
+
+			    <mark>
+
+						<div class="flexline">
+							<div class="online1">  
+								<div>First Name</div>
+								<input type="text" > 
+							</div>
+
+							<div class="online2">  
+								<div>Last Name</div>
+								<input type="text">  
+							</div>
+								
+						</div>
+
+
+						<div class="online3">  
+							<span>E-mail</span>
+					    </div>
+
+
+						<div class="online4">  
+							<input type="text1" >  
+						</div>
+
+
+						
+						<div class="online5">
+							<a href="./New in.html">Go to Tarot & Get Discount</a>						
+						</div>
+
+				
+			    </mark>
+				  
+		   </section>  <!-- 右section -->
 
 
 
-			<!-- 右section -->
-		    <section class="right">    
-			  
-
-				<div class="small">
-					<div><img src="./img/gift0.webp" ></div>
-					<div><img src="./img/gift1.png" ></div>
-					<div class="turn"><img src="./img/gift0.webp" ></div>
-					<div class="turn"><img src="./img/gift1.png" ></div>
-					
-		  
-				</div>
-				<a href="" title=""><i class="fas fa-shopping-bag"></i>Quote</a>
-
-	
-					
-			  
-		     </section>
-		     <!-- 右section -->
+		
 
 
 		</aside>
@@ -107,7 +114,7 @@
 
 
 
-        <h2 class="new_in">Recommend</h2>
+        <h2 class="new_in">New in/Products</h2>
 		<main class="main">
 			
 			<div id="featured" class="container">					
@@ -221,46 +228,7 @@
 			autoplay: true,
 		});
 		
+
 	</script>
-
-
-	<script type="text/javascript">
-	var textWrapper = document.querySelector('.ml2');
-	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-	anime.timeline({loop: true})
-   .add({
-	 targets: '.ml2 .letter',
-	 scale: [4,1],
-	 opacity: [0,1],
-	 translateZ: 0,
-	 easing: "easeOutExpo",
-	 duration: 20000,
-	 delay: (el, i) => 70*i
-   }).add({
-	 targets: '.ml2',
-	 opacity: 0,
-	 duration: 1000,
-	 easing: "easeOutExpo",
-	 delay: 1000
-   });
-   </script>
-
-
-   <script>
-	   function showLarge(e){
-	   document.getElementById("large").src = e.target.src;
-
-	   }
-
-	   function init(){
-		   let imgs = document.querySelectorAll(".small img");
-		   for(let i=0; i<imgs.length; i++){
-			   imgs[i].onclick = showLarge;
-		   }
-	   }
-
-	   window.onload = init;
-   </script>
 </body>
 </html>

@@ -32,27 +32,7 @@
         width:1520px; 
     }/* 輪播圖設定 */
 
-    header.thinbanner {
-        background-color: #B6937F;
-        width: 100%;
-        height: 140;
-      
-      }
-      
-      .ml2 {
-        /* font-weight: 900; */
-        font-size: 4.5em;
-        padding-left: 100px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-      }
-      
-      .ml2 .letter {
-        display: inline-block;
-        line-height: 1em;
-      }
-      
+
 
 /* 包住main和aside的大框 */
     .vessel{
@@ -66,7 +46,7 @@
 
 
 
-/* aside在.vessel裡 */
+/* aside在.vessel裡的上面 */
 aside.aside{
     border: 1px solid yellow; 
     max-width: 1520px;
@@ -79,12 +59,13 @@ aside.aside{
 
 
 
+/* aside裡的右邊 */
 
- section.left{
+ section.right{
     display: flex;
     flex-direction: column;
-    width:900px;
-    height:600px;
+    width:600px;
+    height:700px;
     /* background-image:url("./img/tparty.jpg"); */
     /* background-image: url(../img/tparty.png); */
     /* background-repeat: no-repeat; */
@@ -93,122 +74,97 @@ aside.aside{
     
 }
 
+/* section.right的上面 */
+#tparty img {
+    width:100%;
+    /* height:100%; */
+    border: 1px solid blue;
+
+}
+
+/* section.right的下面 */
+#tdesc{
+    /* width:100%; */
+    /* height:50%; */
+    border: 1px deeppink;
+    background-color: black;
+}
 
 
-/* 小圖換大圖 */
+/* 點小圖換大圖 */
 
-.Box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.big{
+    width: 568px;
+    height: 558px;
+    border: 10px solid #5A0202;
+}
+
+.big img{
+    width: 550px;
+    height: 540px;
+
+}
+.small img{
+   width: 150px;
+   border: 2px solid #5A0202;
+}
+
+/* 為了讓她換行 */
+.Inquiry{
+  width:400px;
+}
+
+
+/* 按鈕 */
+.small span{
+  border: 1px solid #5A0202;
+  color: #5A0202;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
   }
   
-  .big {
-    /* width: 550px; */
-    /* height: 550px; */
-    position: relative;
-  }
-  
-  .big:before {
-    content: "";
-    width: 25%;
-    height: 26%;
-    display: block;
-    position: absolute;
-    background: #b6937f;
-    left: -8%;
-    bottom: -3%;
-  }
-  
-  .bigimg {
-    border: 10px solid #a08e84;
-    padding: 30px;
-    background: #f0f0f0;
-    position: relative;
-  }
-  
-  .big img {
-    width: 100%;
-  }
-  
-  .small img {
-    width: 70px;
-    height: 70px;
-    margin: 20px;
-    border-radius: 80px;
-    background: #ddd;
-  }
-  
-  
-  /* 按鈕 */
-  .small {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-  }
-  
-  .small a {
-    width: 82px;
-    height: 28px;;
-    border: 1px solid #BAA079;
-    color: #BAA079;
-    padding: 8px 43px 8px 43px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .small a:hover {
-    text-decoration: none;
-    border: 1px solid #BAA079;
-    background-color: #BAA079;
-    color:white;
-  }
-  
-  .small span:visited {
-    color: #5A0202;
-  }
-  /* small > i{
-      margin: 0px;
-      padding: 0px;
-  } */
-  
+.small span:hover{
+  background: #F2E0D2; 
+ }
+
+ .small span:visited { 
+ color:#5A0202; 
+ } 
+ .small a{
+  text-decoration: none; 
+ }
+
+/* aside裡的右邊 */
 
 
 
 
 
-section.right{
+
+ /* aside裡的左邊 */
+
+section.left{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:200px;
+    width:850px;
+    /* background-color: white; */
     opacity: .8;
     border: 5px deeppink;
     padding: 5px;
 }
 
-
-
-.h3title{
-    border:1px solid #BAA079;
-    padding: 0px 5px 0px 5px;
-    margin-bottom: 20px;
-}
-
-h3{
-    color:#BAA079;
-}
+ /* aside裡的左邊 */
 
 
 
 
-/* main在.vessel中的下面 */
+
+
+
+
+/* main在.vessel裡的下面 */
 
     main.main{    
         display: flex;
