@@ -57,19 +57,15 @@
 
   	
 	<div class="vessel"> <!-- 包住main和aside的大框  -->
-		<!-- <h2 class="chateau">HOT LINKS</h2> -->
-		<!-- <button type="button" class="btn_toggle">Wine Tarot</button> -->
+
 		<aside class="aside">
-			<section class="left">	<!-- 左section -->
+			<!-- 左section -->
+			<section class="left">	
 			
 				
                     <div class="big">
                          <div class="bigimg"><img  id="large" src="./img/gift0.webp"></div>
-                    </div>
-
- 
-				
-				
+                    </div>			
 
 				
 		    </section> <!-- 左section -->
@@ -77,30 +73,82 @@
 
 
 
-
-
 			<!-- 右section -->
-		    <section class="right">    
-			  
+		    <section class="right">    			  
 
 				<div class="small">
-					<div><img src="./img/gift0.webp" ></div>
-					<div><img src="./img/gift1.png" ></div>
-					<div class="turn"><img src="./img/gift0.webp" ></div>
-					<div class="turn"><img src="./img/gift1.png" ></div>
-					
-		  
+					<button type="button" onclick="ChangeText0()"><img src="./img/gift0.webp" ></button> 
+					<button type="button" onclick="ChangeText1()"><img src="./img/gift1.png" ></button>
+					<button type="button" onclick="ChangeText2()"><img src="./img/gift0.webp" ></button> 
+					<button type="button" onclick="ChangeText3()"><img src="./img/gift1.png" ></button>
 				</div>
 				<a href="" title=""><i class="fas fa-shopping-bag"></i>Quote</a>
+			</section>
+			<!-- 右section -->
 
-	
+
+
+			 <!-- 右端section -->
+			 <section class="rightend">
+
+
+				<div class="change">
+				<h1 id="h1title">Garde tes rêves.<br></h1>
+				<hr>
+				<p id="demo"><b>|Kiara Bella 750ml*1 + LOBO 750ml*1| <br> PO:(KBLB7575) <br></b>		
+					<br>Vineyard size:
+					<br>18.7 hectares (45.8 acres)
+			
+					<br> Vineyard grape varietals:
+					<br>91% Merlot – 6% Cabernet Franc – 3% Petit Verdot
+			
+					<br>Soil types:
+					<br>Gravel and deep clay on iron-rich subsoil
 					
-			  
-		     </section>
-		     <!-- 右section -->
+				<br>
+				</p>
+				</div>
 
+			
+			 </section>  <!-- 右端section -->
 
 		</aside>
+
+
+
+
+		<script>
+		function ChangeText0(){
+		document.getElementById("h1title").innerHTML="Garde tes rêves";
+		document.getElementById("demo").innerHTML="|Kiara Bella 750ml*1 + LOBO 750ml*1|" + "<br>" + "PO:(KBLB7575)"
+		
+		+ "<br>" +	"Vineyard size"
+		+ "<br>" +  "18.7 hectares (45.8 acres)"
+
+		+ "<br>" +	"Vineyard grape varietals"
+		+ "<br>" +  "91% Merlot – 6% Cabernet Franc – 3% Petit Verdot"
+
+		+ "<br>" +  "Soil types"
+		+ "<br>" +	"Gravel and deep clay on iron-rich subsoil;"
+		}
+
+		function ChangeText1(){
+		document.getElementById("h1title").innerHTML="Profites-en!";
+		document.getElementById("demo").innerHTML="|Hill Family 750ml*1 + Ajx 750ml*1|"| + "<br>" + "PO:(HFAJ7575)";
+		}
+
+		function ChangeText2(){
+		document.getElementById("h1title").innerHTML="Bien vivre.";
+		document.getElementById("demo").innerHTML="|Kiara Bella 750ml*1 + Ajx 750ml*1|" + "<br>" + "PO:(KBAJ7575)";
+		}
+
+		function ChangeText3(){
+		document.getElementById("h1title").innerHTML="Souvenir du présent.";
+		document.getElementById("demo").innerHTML="|Hill Family 750ml*1 + LOBO 750ml*1|" + "<br>" + "PO:(HFLB7575)";
+		}
+
+		</script>
+
 
 
 
