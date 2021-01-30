@@ -93,8 +93,32 @@ section.rightend{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 5px solid hotpink; */
+    background: rgba(242, 224, 210, 0.5);
 }
 
+/* section.rightend .change{
+    background-color: #BAA079;
+    background: rgba(242, 224, 210, 0.5);
+} */
+
+#demo{
+    list-style: none;
+    color: grey;
+}
+
+
+#h1title{
+    font-size:24px;
+    text-align: center;
+    color: grey;
+}
+
+
+.change p{
+    font-size: 12px;
+    text-align: center;
+}
 
 
 /* 小圖換大圖 */
@@ -130,7 +154,7 @@ section.rightend{
   .small img {
     width: 70px;
     height: 70px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 80px;
     /* background: #ddd; */
   }
@@ -297,7 +321,7 @@ section.rightend{
 
 
 
-.h3title{
+/* .h3title{
     border:1px solid #BAA079;
     padding: 0px 5px 0px 5px;
     margin-bottom: 20px;
@@ -305,7 +329,7 @@ section.rightend{
 
 h3{
     color:#BAA079;
-}
+} */
 
 
 
@@ -323,7 +347,7 @@ h3{
     h2{
         text-align: center;
         padding: 10px 0px 10px 0px;
-        margin: 0;
+        margin-top: 50px;
         border-top: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
         border-left: 0px;
