@@ -123,7 +123,7 @@
 				<div class="fboxs" id="fbox1"> <img src="./img/transparent0.png" width="235" height="235" alt="" />
 					<h3>Fusce ultrices fringilla</h3>
 					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<button class="choosecard" id="chosencard0" style="display:none"><img src="./img/1tarot.jpg" class = "result" ></button>
+					<button class="choosecard" id="chosencard0" style="display:none"><img src="./img/1tarot.jpg" id="0" class = "result" ></button>
 					
 				</div>
 	
@@ -131,14 +131,14 @@
 				<div class="fboxs" id="fbox2"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
 					<h3>Fusce ultrices fringilla</h3>
 					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<button class="choosecard" id="chosencard1" style="display:none" ><img src="./img/1tarot.jpg" class = "result"></button>
+					<button class="choosecard" id="chosencard1" style="display:none" ><img src="./img/1tarot.jpg" id="1" class = "result"></button>
 				</div>
 	
 
 				<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
 					<h3>Fusce ultrices fringilla</h3>
 					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<button class="choosecard" id="chosencard2" style="display:none"><img src="./img/1tarot.jpg" class = "result"></button>
+					<button class="choosecard" id="chosencard2" style="display:none"><img src="./img/1tarot.jpg" id="2" class = "result"></button>
 				</div>
 	
 
@@ -231,11 +231,32 @@
 			return Math.floor(Math.random() * size + start);
 		}
 
-	function showCard(){
-		var arr_img=['./img/flat.png', './img/transparent1.png', './img/transparent2.png'];
+		function check_image_repeat(img1, img2) {
+			if (img1 == img2)
+				return true;
+			return false;
+		}
 
-		this.src = arr_img[get_random(0, arr_img.length)];
-		
+	function showCard(){
+		var arr_img=['./img/flat.png', './img/transparent0.png', './img/transparent1.png', './img/transparent2.png', './img/transparent3.png', './img/transparent4.png'];
+		var arr_result = document.getElementsByClassName("result");
+		var retry = 100000, i;
+
+		while (retry > 0) {
+			this.src = arr_img[get_random(0, arr_img.length)];
+			for (i = 0; i < arr_result.length; i++) {
+
+				if (this.id == arr_result[i].id)
+					continue;
+				if (check_image_repeat(arr_result[i].src, this.src))
+					break;
+				
+			}
+
+			if (i == arr_result.length)
+				break;
+			retry--;
+		}
 	}
 
 	
