@@ -92,7 +92,7 @@ section.right{
     width:600px;
     height:300px;
     border: 1px deeppink;
-    background-color: black;
+    /* background-color: black; */
 }
 
 
@@ -197,13 +197,14 @@ input[type="text2"]{padding:5px 15px; caret-color:#BAA079; color: #BAA079;
 
 
 
-/* button.btn_toggle{
+button.btn_toggle{
     width: 50%;
 }
 
 div.parent_flex{
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
   }
   
   div.left_block{
@@ -218,16 +219,16 @@ div.parent_flex{
   }
   div.left_block div.inner_content{
     width: 600px;
-    height: 300px;
+    height: 200px;
   }
   div.left_block div.inner_content img{
     width: 500px;
-    height: 300px;
+    height: 200px;
   }
   
 
   div.right_block{
-    border: 1px solid blue;
+    border: 2px solid blue;
     flex-grow: 1;
   }
 
@@ -237,9 +238,9 @@ div.parent_flex{
     flex-grow: 1;
 
 
-    width: 200px;
-    height: 300px;
-  }  */
+    width: 100px;
+    height: 200px;
+  } 
 
 
 
