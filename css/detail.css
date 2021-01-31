@@ -82,7 +82,7 @@ aside.aside {
     max-width: 100%;
     height: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     /* border: 1px solid  purple; */
 }
@@ -125,10 +125,6 @@ section.rightend {
 .change p {
     font-size: 12px;
     text-align: center;
-    border-bottom: 1px solid lightgray;
-    border-left: 0px;
-    border-right: 0px;
-    padding-bottom: 10px;
 }
 
 
@@ -227,26 +223,8 @@ div.right {
 
 /* 計數器 */
 
-@media (max-width:1250px) {
-    section.rightend{
-        width: 100%;
-    }
 
-    .change{
-       
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
 
-    .change p {
-        width: 100%;
-        border-bottom: 1px solid lightgray;
-        border-left: 0px;
-        border-right: 0px;
-        padding-bottom: 10px;
-    }
-}
 
 
 @media (max-width:1103.5px) {
@@ -283,7 +261,6 @@ div.right {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        margin-top:20px;
         border: 5px solid deeppink;
     }
 
@@ -314,7 +291,7 @@ div.right {
 
 
 article {
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     border: 5px solid red;
@@ -324,15 +301,18 @@ article {
 
 
 .insidegift {
-    margin-top: 150px;
-    border-radius: 50%;
+    /* margin-top: 300px; */
+    /* border-radius: 50%; */
     overflow: hidden;
-    width: 400px;
+    width: 600px;
+    height: 500px;
+    border: 5px solid green;
+    display: inline-block;
 }
 
 .insidegift img {
     width: 100%;
-    border-radius: 50%;
+    /* margin-left:50%; */
 }
 
 
