@@ -32,6 +32,30 @@
 		
 	  });
 	</script>
+	
+	<script>
+		function get_current_buy_count() {
+			return document.getElementById("buy_count").value;
+		}
+
+		function compute_buy_count(){
+			var input_object = document.getElementById("buy_count");
+
+			if (get_current_buy_count() == 0) {
+				if (this.value == '+') {
+					input_object.value++;
+				} else {
+					input_object.value = 0;
+				}
+			} else {
+				if (this.value == '+') {
+					input_object.value++;
+				} else {
+					input_object.value--;
+				}
+			}
+		}
+	</script>
 </head>
 <body>
 
@@ -60,7 +84,7 @@
 
 		<aside class="aside">
 			<!-- 左section -->
-			<section class="left">	
+			<div class="left">	
 			
 				
                     <div class="big">
@@ -68,13 +92,13 @@
                     </div>			
 
 				
-		    </section> <!-- 左section -->
+			</div> <!-- 左section -->
 
 
 
 
 			<!-- 右section -->
-		    <section class="right">    			  
+		    <div class="right">
 
 				<div class="small">
 					<button type="button" onclick="ChangeText0()"><img src="./img/gift0.webp" ></button> 
@@ -82,8 +106,13 @@
 					<button type="button" onclick="ChangeText2()"><img src="./img/gift0.webp" ></button> 
 					<button type="button" onclick="ChangeText3()"><img src="./img/gift1.png" ></button>
 				</div>
-				<a href="" title=""><i class="fas fa-shopping-bag"></i>Quote</a>
-			</section>
+
+				<div class="counter">
+					<input class = "add_minus" type="button" value="-"><input type="text" id = "buy_count" value="1"><input class = "add_minus" type="button" value="+">
+				</div>
+				
+			</div>
+					
 			<!-- 右section -->
 
 
@@ -125,6 +154,14 @@
 			 </section>  <!-- 右端section -->
 
 		</aside>
+
+
+		<article>
+			<div class="insidegift">
+				<img src="./img/chateau4.jpg" alt="">
+			</div>
+			<!-- <img src="./img/glit.jpg" alt=""> -->
+		</article>
 
 
 
@@ -308,19 +345,46 @@
 
 
    <script>
-	   function showLarge(e){
-	   document.getElementById("large").src = e.target.src;
+		var leftbox = document.getElementsByClassName("left");
+		var bigbox = document.getElementsByClassName("big");
+		var bigimgbox = document.getElementsByClassName("bigimg");
+		var largebox = document.getElementById("large");
+		var big_before = window.getComputedStyle(bigbox[0],'::before');
+		var bigimgbox_width = bigimgbox[0].offsetWidth;
+		var original_left_height = leftbox[0].offsetHeight;
+		var original_big_height = bigbox[0].offsetHeight;
 
-	   }
+		function showLarge(e){
+			document.getElementById("large").src = e.target.src;
+		}
 
-	   function init(){
-		   let imgs = document.querySelectorAll(".small img");
-		   for(let i=0; i<imgs.length; i++){
-			   imgs[i].onclick = showLarge;
-		   }
-	   }
+		function init(){
+			let imgs = document.querySelectorAll(".small img");
+			var arr_add_minus = document.getElementsByClassName("add_minus");
 
-	   window.onload = init;
+			for(let i=0; i<imgs.length; i++){
+				imgs[i].onclick = showLarge;
+			}
+
+			for (var i = 0; i < arr_add_minus.length; i++) {
+				arr_add_minus[i].onclick = compute_buy_count;
+			}
+		}
+
+		window.addEventListener("load", init, false);
+		window.onresize = function () {
+			//  alert("leftbox[0].style.margin-bottom:" + leftbox[0].marginBottom + " bigimgbox_width:"+ bigimgbox_width + " width:"+window.innerWidth + "height:" + window.innerHeight + "img width:" + document.getElementById('large').clientWidth +"img height:" + document.getElementById('large').clientHeight +" leftwidth:"+leftbox[0].offsetWidth+" leftboxheight:"+leftbox[0].offsetHeight+" bigboxwidth:"+bigbox[0].offsetWidth+" leftboxheight:"+bigbox[0].offsetHeight+" bigimgboxwidth:"+bigimgbox[0].offsetWidth+" bigimgboxheight:"+bigimgbox[0].offsetHeight+" largeboxwidth:"+largebox.offsetWidth+" largeboxheight:"+largebox.offsetHeight+" original_left_height:" + original_left_height + " original_big_height:" + original_left_height);
+			// alert(big_before.display);
+			if (window.innerWidth < bigimgbox_width) {
+				leftbox[0].style.marginBottom = "0px";
+				leftbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
+				bigbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
+			} else {
+				leftbox[0].style.marginBottom = "30px";
+				leftbox[0].style.height= original_left_height + 'px';
+				bigbox[0].style.height= original_big_height + 'px';
+			}
+		}
    </script>
 </body>
 </html>

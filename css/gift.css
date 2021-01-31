@@ -1,78 +1,88 @@
 /* 整體設定 */
-    *{
-        box-sizing: border-box;
-        font-family: 'Abel', sans-serif;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-    }/* 整體設定 */
+* {
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 整體設定 */
 
 
 /* 輪播圖設定 */
-    .slimg{
-        max-width: 1520px;
-        height:700px;
-        margin: 0;
-    }
-    .slick-slide img {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    .slick-slide {
-        width:1520px;
-    }
-    .slide{
-        padding: 0;
-        margin: 0;
-    }
+.slimg {
+    max-width: 1520px;
+    height: 700px;
+    margin: 0;
+}
 
-    .slick-track{
-        width:1520px; 
-    }/* 輪播圖設定 */
+.slick-slide img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.slick-slide {
+    width: 1520px;
+}
+
+.slide {
+    padding: 0;
+    margin: 0;
+}
+
+.slick-track {
+    width: 1520px;
+}
+
+/* 輪播圖設定 */
 
 
-    header.thinbanner {
-        background-color: #B6937F;
-        width: 100%;
-        height: 140;
-      }
-      
-      .ml2 {
-        /* font-weight: 900; */
-        font-size: 4.5em;
-        /* padding-left: 100px; */
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-      }
-      
-      .ml2 .letter {
-        display: inline-block;
-        line-height: 1em;
-      }
-      
+header.thinbanner {
+    background-color: #B6937F;
+    width: 100%;
+    height: 140;
+}
+
+.ml2 {
+    /* font-weight: 900; */
+    font-size: 4.5em;
+    /* padding-left: 100px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
 
 /* 包住main和aside的大框 */
-    .vessel{
-        border: 1px solid green; 
-        max-width: 1520px;
-        display: flex;
-        flex-direction: column; 
-        justify-content:stretch;
-    } /* 包住main和aside的大框 */
+.vessel {
+    border: 1px solid green;
+    max-width: 1520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+/* 包住main和aside的大框 */
 
 
 
 
 /* aside在.vessel裡 */
-aside.aside{
-    border: 1px solid yellow; 
+aside.aside {
+    border: 1px solid yellow;
     max-width: 100%;
     height: 33%;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     /* border: 1px solid  purple; */
 }
@@ -80,16 +90,17 @@ aside.aside{
 
 
 
- section.left{
+div.left {
     display: flex;
     justify-content: flex-end;
-    width:700px;
-    height:450px;
-    border:  1px solid black;
+    width: 700px;
+    height: 450px;
+    border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 
-section.rightend{
+section.rightend {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,25 +108,21 @@ section.rightend{
     background: rgba(242, 224, 210, 0.5);
 }
 
-/* section.rightend .change{
-    background-color: #BAA079;
-    background: rgba(242, 224, 210, 0.5);
-} */
 
-#demo{
+#demo {
     list-style: none;
     color: grey;
 }
 
 
-#h1title{
-    font-size:24px;
+#h1title {
+    font-size: 24px;
     text-align: center;
     color: grey;
 }
 
 
-.change p{
+.change p {
     font-size: 12px;
     text-align: center;
 }
@@ -123,13 +130,11 @@ section.rightend{
 
 /* 小圖換大圖 */
 
-
-  
-  .big {
+.big {
     position: relative;
-  }
-  
-  .big:before {
+}
+
+.big:before {
     content: "";
     width: 25%;
     height: 26%;
@@ -138,264 +143,255 @@ section.rightend{
     background: #b6937f;
     left: -8%;
     bottom: -3%;
-  }
-  
-  .bigimg {
+}
+
+.bigimg {
     border: 10px solid #a08e84;
     padding: 30px;
     background: #f0f0f0;
     position: relative;
-  }
-  
-  .big img {
+}
+
+.big img {
     width: 100%;
-  }
-  
-  .small img {
+}
+
+.small img {
     width: 70px;
     height: 70px;
     margin: 15px;
     border-radius: 80px;
     /* background: #ddd; */
-  }
+}
 
 
-  
-  
-  /* 按鈕 */
-
-  .right a {
-    width: 82px;
-    height: 28px;;
-    border: 1px solid #BAA079;
-    color: #BAA079;
-    padding: 8px 43px 8px 43px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right a:hover {
-    text-decoration: none;
-    border: 1px solid #BAA079;
-    background-color: #BAA079;
-    color:white;
-  }
-
-  
-  .small {
+.small {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* margin-left: 20px; */
-  }
+}
 
-  .small > button{
+.small>button {
     margin: 0;
     padding: 0;
-    border: 1px solid transparent;  
+    border: 1px solid transparent;
     outline: none;
     background-color: white;
-  }
+}
 
-  section.right{
+div.right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:200px;
+    width: 200px;
     border: 5px deeppink;
 }
 
+/* 小圖換大圖 */
 
 
-  @media (max-width:1103.5px){
+
+
+/* 計數器 */
+.counter {
+    display: flex;
+}
+
+#buy_count {
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    outline: none;
+    caret-color: #BAA079;
+    border: 1px solid #BAA079;
+    color: #BAA079;
+    background-color: rgba(160, 142, 132 1);
+
+}
+
+.add_minus {
+    width: 20px;
+    height: 25px;
+    border: 1px solid #BAA079;
+    background-color: rgba(160, 142, 132, 0.8);
+    color: white;
+    outline: none;
+    border-radius: 2px;
+}
+
+/* 計數器 */
+
+
+
+
+
+@media (max-width:1103.5px) {
 
     .small {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;   
-      }
-
-      section.right{
-        display: flex;
-        flex-direction: row;
-        justify-content:  center;
-        width:100%;
-        border: 5px solid deeppink;
-      }
-
-      section.left{
-        display: flex;
-        justify-content: center;
-        width:100%;
-        height:500px;
-        border:  1px solid black;
+        flex-wrap: nowrap;
     }
 
-     }
+    div.right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border: 5px solid deeppink;
+    }
 
+    div.left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        border: 1px solid black;
+    }
 
-     @media (max-width:560px){
-        section.right{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:  center;
-            width:100%;
-            border: 5px solid deeppink;
-          }
-
-     }
-
-
-     @media (max-width:450px){
-
-
-        .big {
- 
-            height: 450px;
-          }
-   
-
-        .small img {
-            width: 70px;
-            height: 70px;
-            margin: 5px;
-            border-radius: 80px;
-            background: #ddd;
-            display: block;
-          }
-
-     }
-
-
-
-
-
-     /* @media (max-width:660px){
-
-        .small {
-            display: flex;
-            flex-direction: row;
-            justify-content:  flex-start;
-            flex-wrap: nowrap; 
-            margin-left: 5%;
-          }
-    
-          section.right{
-            display: flex;
-            flex-direction: row;
-            justify-content:  flex-start;
-            width:300px;
-            border: 5px deeppink;
-            padding: 5px;
-          }
-         }
-
-        @media (max-width:555px){
-            section.right{
-                display: flex;
-                flex-direction: row;
-                justify-content:  flex-start;
-                width:300px;
-                border: 5px deeppink;
-                padding: 5px;
-              }
-              .small img {
-                width: 70px;
-                height: 70px;
-                margin: 10px;
-                border-radius: 80px;
-                background: #ddd;
-              }
-
-            }    */
-    
-
-
-
-
-
-
-
-
-/* .h3title{
-    border:1px solid #BAA079;
-    padding: 0px 5px 0px 5px;
-    margin-bottom: 20px;
 }
 
-h3{
-    color:#BAA079;
-} */
+
+@media (max-width:560px) {
+    div.right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        border: 5px solid deeppink;
+    }
+
+}
+
+
+@media (max-width:450px) {
+
+
+    .big {
+
+        height: 450px;
+    }
+
+
+    .small img {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        border-radius: 80px;
+        background: #ddd;
+        display: block;
+    }
+
+}
+
+
+
+
+article {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+    background-image: url(../img/glit.jpg);
+    background-repeat: repeat-x;
+}
+
+
+.insidegift {
+    /* margin-top: 300px; */
+    /* border-radius: 50%; */
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+    border: 5px solid green;
+    display: inline-block;
+}
+
+.insidegift img {
+    width: 100%;
+    /* margin-left:50%; */
+}
+
+
+
+
+
 
 
 
 
 /* main在.vessel中的下面 */
 
-    main.main{    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 5vh;
-        /* border: 1px solid black; */
-    }
+main.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+    /* border: 1px solid black; */
+}
+
 /* 標題 */
-    h2{
-        text-align: center;
-        padding: 10px 0px 10px 0px;
-        margin-top: 50px;
-        border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
-        border-left: 0px;
-        border-right: 0px;
-    }/* 標題 */
+h2 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 0px;
+    border-right: 0px;
+}
 
-    /* 商品圖頁面縮小會往下排 */
-    #featured{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    /* 商品圖頁面縮小會往下排 */
+/* 標題 */
 
-    #featured.container {
-        width: 100%;
-        max-width: 1300px;
-    }
-    #featured .fboxs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex: 1 0 25%;
-        padding: 0 20px;
-    }
-    #featured .fboxs p {
-        margin-top: 0;
-    }
+/* 商品圖頁面縮小會往下排 */
+#featured {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
- 
-    .more_info > a{  /* 按鈕a */
-        margin-bottom: 10px;
-        padding: 2.5px 25px 2.5px 25px;
-        text-decoration: none;
-        border: 1px solid #BAA079;
-        color: #BAA079;
-    }
+/* 商品圖頁面縮小會往下排 */
 
-    .more_info > a:hover{
-        text-decoration: none;
-        border: 1px solid #BAA079;
-        background-color: #BAA079;
-        color:white;
-    }
+#featured.container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+#featured .fboxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 25%;
+    padding: 0 20px;
+}
+
+#featured .fboxs p {
+    margin-top: 0;
+}
 
 
-    /* main在.vessel裡 */
+.more_info>a {
+    /* 按鈕a */
+    margin-bottom: 10px;
+    padding: 2.5px 25px 2.5px 25px;
+    text-decoration: none;
+    border: 1px solid #BAA079;
+    color: #BAA079;
+}
+
+.more_info>a:hover {
+    text-decoration: none;
+    border: 1px solid #BAA079;
+    background-color: #BAA079;
+    color: white;
+}
+
+
+/* main在.vessel裡 */
 
 
 
@@ -408,152 +404,154 @@ h3{
 
 /* footer在.vessel外, 以下是電腦螢幕和手機螢幕 */
 
-footer.footer{
+footer.footer {
     display: flex;
     justify-content: center;
     height: 100px;
     /* max-width: 1520px; */
     /* border: 1px deeppink; */
-    background-color:rgba(128, 128, 128, 0.192);
-    color:#BEBEBE;
+    background-color: rgba(128, 128, 128, 0.192);
+    color: #BEBEBE;
     font-family: 'Abel', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.middele_blank{
+.middele_blank {
     width: 80px;
     padding: 15px;
     color: black;
     /* border: 1px solid white; */
 }
 
-.warning{
+.warning {
     padding: 15px;
     /* text-align: center; */
     /* border: 1px solid white; */
 }
-.rights{
+
+.rights {
     padding: 15px;
     /* border: 1px solid white; */
 }
 
- @media (max-width:820px){
-    .warning{
-        padding:15px;
+@media (max-width:820px) {
+    .warning {
+        padding: 15px;
         /* font-size: 13px; */
     }
 
-    .middele_blank{
+    .middele_blank {
         width: 90px;
         padding: 15px;
-        color:transparent;
+        color: transparent;
         border: 1px solid white;
     }
 
-    .rights{
-       padding: 15px;
-       /* font-size: 13px; */
-       
-   }
-   #featured .fboxs {
+    .rights {
+        padding: 15px;
+        /* font-size: 13px; */
+
+    }
+
+    #featured .fboxs {
         flex: 1 0 50%;
     }
 }
 
 
- @media (max-width:582px){
+@media (max-width:582px) {
 
-    footer.footer{
-        width:100%;
+    footer.footer {
+        width: 100%;
     }
 
-    .warning{
-        padding:8px;
+    .warning {
+        padding: 8px;
         /* font-size: 13px; */
     }
 
-    .middele_blank{
-        color:transparent; 
+    .middele_blank {
+        color: transparent;
     }
 
-    .rights{
-       padding: 8px;
-       /* font-size: 13px; */
-   }
+    .rights {
+        padding: 8px;
+        /* font-size: 13px; */
+    }
 
 }
 
-@media (max-width:469px){
-    .warning{
+@media (max-width:469px) {
+    .warning {
         padding: 5px;
         font-size: 13px;
     }
 
-    .middele_blank{
+    .middele_blank {
         width: 90px;
         padding: 6px;
-        color:transparent;
+        color: transparent;
         border: 1px solid white;
         font-size: 13px;
     }
 
 
-    .rights{
+    .rights {
         padding: 6px;
         font-size: 13px;
-   }
+    }
 }
 
 
 
- @media (max-width:434px){
-    .warning{
-        padding:6px;
+@media (max-width:434px) {
+    .warning {
+        padding: 6px;
         font-size: 12px;
     }
 
-    .middele_blank{
+    .middele_blank {
         width: 160px;
         padding: 0;
-        color:transparent;
+        color: transparent;
         border: 1px solid white;
         font-size: 13px;
     }
 
 
-    .rights{
-       padding: 6px;
-       font-size: 12px;
-   }
+    .rights {
+        padding: 6px;
+        font-size: 12px;
+    }
 
 }
 
-@media (max-width:344px){
-  
+@media (max-width:344px) {
 
 
 
-    .warning{
+
+    .warning {
         margin: 0;
-        padding:0px;
+        padding: 0px;
         font-size: 11px;
     }
 
-    .middele_blank{
+    .middele_blank {
         width: 160px;
         padding: 0;
-        color:transparent;
+        color: transparent;
         border: 1px solid white;
         font-size: 13px;
     }
 
 
-    .rights{
-       margin: 0;
-       padding: 0px;
-       font-size: 11px;
-   }
+    .rights {
+        margin: 0;
+        padding: 0px;
+        font-size: 11px;
+    }
 
 }
 
@@ -570,14 +568,14 @@ footer.footer{
 /* nav在.vessel外,以下是電腦螢幕和手機螢幕 */
 
 /* 電腦螢幕 */
-nav{
+nav {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     position: fixed;
     bottom: 0px;
     left: 0;
-    right:0px;
+    right: 0px;
     /* border: 1px solid red; */
     font-family: 'Abel', sans-serif;
     color: black;
@@ -585,22 +583,22 @@ nav{
     /* font-weight: bolder; */
 }
 
-.stamp{
+.stamp {
     align-self: center;
     width: 80px;
     height: 80px;
     /* border: 1px solid blue;    */
 }
 
-.stamp > a > img{
+.stamp>a>img {
     width: 80px;
     height: 80px;
-    position: fixed ;
+    position: fixed;
     bottom: 30px;
     z-index: 1;
 }
 
-ul.optbar{
+ul.optbar {
     max-width: 1520px;
     display: flex;
     flex-direction: row;
@@ -612,23 +610,23 @@ ul.optbar{
     background-color: #BAA079;
     position: fixed;
     right: 0;
-    left:0;
+    left: 0;
     bottom: 0;
 }
 
-ul.optbar > li{
+ul.optbar>li {
     list-style: none;
     border: 1px solid #d3b890;
     color: white;
     margin-left: -2px;
 }
 
-ul.optbar li:hover{   
+ul.optbar li:hover {
     text-decoration: none;
-    background-color:#9D7200;
+    background-color: #9D7200;
 }
 
-ul.optbar > li > a{
+ul.optbar>li>a {
     text-decoration: none;
     color: white;
 }
@@ -644,7 +642,7 @@ li.opt1 {
     margin-bottom: 3px;
 }
 
-li.opt6{
+li.opt6 {
     position: fixed;
     right: 5px;
     padding: 10px 5px 10px 5px;
@@ -653,66 +651,67 @@ li.opt6{
 }
 
 
-li.opt2{
-    bottom:5px;
+li.opt2 {
+    bottom: 5px;
     padding: 15px 15px 15px 15px;
     margin-right: 1px;
 }
 
-li.opt3{
-    bottom:5px;
+li.opt3 {
+    bottom: 5px;
     padding: 15px 15px 10px 15px;
     margin-right: 1px;
 }
 
-li.opt4{  
-    bottom:5px;
+li.opt4 {
+    bottom: 5px;
     padding: 15px 15px 10px 15px;
     margin-right: 1px;
 }
 
-li.opt5{ 
-    bottom:5px;
+li.opt5 {
+    bottom: 5px;
     padding: 15px 12px 15px 12px;
 }
+
 /* 電腦螢幕 */
 
 
 
 /* 手機螢幕1 */
-  @media (max-width:512px){
+@media (max-width:512px) {
 
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         position: fixed;
         bottom: 0px;
         left: 0;
-        right:0px;
+        right: 0px;
         /* border: 1px solid yellow; */
         font-family: 'Abel', sans-serif;
         color: black;
         text-transform: uppercase;
         /* font-weight: bolder; */
     }
-    
-    .stamp{
+
+    .stamp {
         align-self: center;
         width: 80px;
         height: 80px;
         /* border: 1px solid blue;    */
     }
-    
-    .stamp > a > img{
+
+    .stamp>a>img {
         width: 80px;
         height: 80px;
-        position: fixed ;
+        position: fixed;
         bottom: 30px;
         z-index: 1;
     }
-    
-    ul.optbar{
+
+    ul.optbar {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -723,61 +722,61 @@ li.opt5{
         background-color: #BAA079;
         position: fixed;
         right: 0;
-        left:0;
+        left: 0;
         bottom: 0;
-    
+
     }
-    
-    ul.optbar > li{
+
+    ul.optbar>li {
         list-style: none;
         border: 1px solid #d3b890;
         color: white;
         margin-left: -2px;
     }
-    
-    ul.optbar > li:hover{   
+
+    ul.optbar>li:hover {
         text-decoration: none;
-        background-color:#9D7200; 
+        background-color: #9D7200;
         /* opacity: .8;   */
         /* color: black; */
     }
-    
-    ul.optbar > li >a{
+
+    ul.optbar>li>a {
         text-decoration: none;
         color: white;
     }
-    
-    
-    li.opt2{
+
+
+    li.opt2 {
         margin-right: 1px;
         padding: 13px 3px 0 3px;
     }
-    
-    li.opt3{
+
+    li.opt3 {
         margin-right: 1px;
-        padding:  13px 3px 0 3px;
+        padding: 13px 3px 0 3px;
     }
-    
-    li.opt4{  
+
+    li.opt4 {
         margin-right: 1px;
-        padding:  13px 3px 0 3px;
-    }
-    
-    li.opt5{ 
-        
-        padding:  13px 3px 0 3px;
+        padding: 13px 3px 0 3px;
     }
 
+    li.opt5 {
+
+        padding: 13px 3px 0 3px;
+    }
 
 
-    li.opt1{
-    
+
+    li.opt1 {
+
         padding: 10px 2px 10px 2px;
     }
 
-    li.opt6{
-    
-        padding: 10px 2px 10px 2px; 
+    li.opt6 {
+
+        padding: 10px 2px 10px 2px;
     }
 
 
@@ -786,22 +785,25 @@ li.opt5{
         padding: 13px 0px 0px 0px;
         bottom:  1px;
     } */
-   
-}  /* @media screen and (max-width: 512px) *//* 手機螢幕1 */
+
+}
+
+/* @media screen and (max-width: 512px) */
+/* 手機螢幕1 */
 
 
 
 /* 手機螢幕2 */
-@media (max-width:400px){
+@media (max-width:400px) {
 
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         position: fixed;
         bottom: 0px;
         left: 0;
-        right:0px;
+        right: 0px;
         /* border: 1px solid red; */
         font-family: 'Abel', sans-serif;
         color: black;
@@ -809,23 +811,23 @@ li.opt5{
         /* font-weight: bolder; */
         font-size: 14px;
     }
-    
-    .stamp{
+
+    .stamp {
         align-self: center;
         width: 80px;
         height: 80px;
         /* border: 1px solid blue;    */
     }
-    
-    .stamp > a > img{
+
+    .stamp>a>img {
         width: 80px;
         height: 80px;
-        position: fixed ;
+        position: fixed;
         bottom: 30px;
         z-index: 1;
     }
-    
-    ul.optbar{
+
+    ul.optbar {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -836,86 +838,89 @@ li.opt5{
         background-color: #BAA079;
         position: fixed;
         right: 0;
-        left:0;
+        left: 0;
         bottom: 0;
-    
+
     }
-    
-    ul.optbar > li{
+
+    ul.optbar>li {
         list-style: none;
         border: 1px solid #d3b890;
         color: white;
         margin-left: -2px;
-        
+
     }
-    
-    ul.optbar > li:hover{   
+
+    ul.optbar>li:hover {
         text-decoration: none;
         background-color: #9D7200;
         /* opacity: .8;  
         color: black; */
     }
-    
-    ul.optbar > li >a{
+
+    ul.optbar>li>a {
         text-decoration: none;
         color: white;
     }
 
-    
 
 
-    li.opt2{
+
+    li.opt2 {
         margin-right: 1px;
         padding: 14px 1px 0 5px;
     }
-    
-    li.opt3{
+
+    li.opt3 {
         margin-right: 1px;
-        padding: 14px 1px 0 1px;
-    }
-    
-    li.opt4{  
-        margin-right: 1px;
-        padding: 14px 1px 0 1px;
-    }
-    
-    li.opt5{ 
-        
         padding: 14px 1px 0 1px;
     }
 
-   
-    li.opt1{
+    li.opt4 {
+        margin-right: 1px;
+        padding: 14px 1px 0 1px;
+    }
+
+    li.opt5 {
+
+        padding: 14px 1px 0 1px;
+    }
+
+
+    li.opt1 {
         margin: 0;
         margin-right: 1px;
         padding: 14px 5px 15px 2px;
-    }  
+    }
 
-    li.opt6{
+    li.opt6 {
         margin: 0;
         margin-right: 1px;
         padding: 14px 2px 15px 2px;
-    }  
+    }
 
 
 
 
-}  /* @media screen and (max-width: 384px) *//* 手機螢2 */
+}
+
+/* @media screen and (max-width: 384px) */
+/* 手機螢2 */
 
 
 
 
 /* 手機螢幕3 */
-@media (max-width:342px){
+@media (max-width:342px) {
 
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         position: fixed;
         bottom: 0px;
         left: 0;
-        right:0px;
+        right: 0px;
         border: 1px solid white;
         font-family: 'Abel', sans-serif;
         color: black;
@@ -923,23 +928,23 @@ li.opt5{
         /* font-weight: bolder; */
         font-size: 13px;
     }
-    
-    .stamp{
+
+    .stamp {
         align-self: center;
         width: 80px;
         height: 80px;
-        
+
     }
-    
-    .stamp > a > img{
+
+    .stamp>a>img {
         width: 80px;
         height: 80px;
-        position: fixed ;
+        position: fixed;
         bottom: 30px;
         z-index: 1;
     }
-    
-    ul.optbar{
+
+    ul.optbar {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -947,62 +952,62 @@ li.opt5{
         padding: 0;
         height: 50px;
         /* border: 1px solid yellow; */
-        background-color:#BAA079;
+        background-color: #BAA079;
         position: fixed;
         right: 0;
-        left:0;
+        left: 0;
         bottom: 0;
-    
+
     }
-    
-    ul.optbar > li{
+
+    ul.optbar>li {
         list-style: none;
         border: 1px solid #d3b890;
         color: white;
         margin-left: -2px;
     }
-    
-    ul.optbar > li:hover{   
+
+    ul.optbar>li:hover {
         text-decoration: none;
         background-color: #9D7200;
         /* opacity: .8;  
         color: black; */
     }
-    
-    ul.optbar > li >a{
+
+    ul.optbar>li>a {
         text-decoration: none;
-        color:white;
+        color: white;
     }
-    
-     
-    
-    li.opt2{
-    
+
+
+
+    li.opt2 {
+
         padding: 14px 1px 0 3px;
         margin-right: 1px;
     }
-    
-    li.opt3{
-        
-        padding: 14px 1px 0 1px;
-        margin-right: 1px;
-    }
-    
-    li.opt4{  
-     
-        padding: 14px 1px 0 1px;
-        margin-right: 1px;
-    }
-    
-    li.opt5{ 
-        
-        padding: 14px 0px 0px 1px;
-        
-    }
-   
 
-    li.opt1{
-    
+    li.opt3 {
+
+        padding: 14px 1px 0 1px;
+        margin-right: 1px;
+    }
+
+    li.opt4 {
+
+        padding: 14px 1px 0 1px;
+        margin-right: 1px;
+    }
+
+    li.opt5 {
+
+        padding: 14px 0px 0px 1px;
+
+    }
+
+
+    li.opt1 {
+
         margin: auto;
         padding: 14px 3px 15px 4px;
         margin-left: 0px !important;
@@ -1012,31 +1017,22 @@ li.opt5{
         bottom:  1px;
         margin-right: 0px; */
     }
-    
-    li.opt6{
-    
+
+    li.opt6 {
+
         margin: auto;
         padding: 14px 3px 15px 1px;
         margin-right: 0px !important;
-        
+
     }
 
 
 
 
-}  /* @media screen and (max-width: 342px) *//* 手機螢3 */
+}
+
+/* @media screen and (max-width: 342px) */
+/* 手機螢3 */
 
 
 /* nav在.vessel外,以上是電腦螢幕和手機螢幕 */
-
-
-
-
-
-
-
-
-
-
-
-
