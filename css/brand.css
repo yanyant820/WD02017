@@ -60,7 +60,7 @@
 
 /* 包住main和aside的大框 */
     .vessel{
-        border: 1px solid green; 
+        /* border: 1px solid green;  */
         max-width: 1520px;
         display: flex;
         flex-direction: column; 
@@ -78,7 +78,7 @@ aside.aside{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: rgba(242, 224, 210, 0.5);
+    /* background: rgba(242, 224, 210, 0.5); */
     margin-top: 20px;
 }
 
@@ -223,6 +223,7 @@ section.right{
 
       .content-group {
         border:1px solid #ccc;
+        background-color:rgba(242, 224, 210, 0.5); 
       }
 
       .content{

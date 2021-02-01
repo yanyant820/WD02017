@@ -89,7 +89,7 @@
 				
                     <div class="big">
 						
-                         <div class="bigimg"><img  id="large" src="./img/gift7.png"></div>
+                         <div class="bigimg"><img  id="large" src="./img/gift5.png"></div>
                     </div>			
 
 				
@@ -125,10 +125,10 @@
 		    <div class="right">
 
 				<div class="small">
-					<button type="button" onclick="ChangeText0()"><img src="./img/gift8.png" ></button> 
-					<button type="button" onclick="ChangeText1()"><img src="./img/gift7.png" ></button>
-					<button type="button" onclick="ChangeText2()"><img src="./img/gift8.png" ></button> 
-					<button type="button" onclick="ChangeText3()"><img src="./img/gift1.png" ></button>
+					<button type="button" onclick="ChangeText0()"><img src="./img/gift7.png" ></button> 
+					<button type="button" onclick="ChangeText1()"><img src="./img/gift5.png" ></button>
+					<button type="button" onclick="ChangeText2()"><img src="./img/gift7.png" ></button> 
+					<button type="button" onclick="ChangeText3()"><img src="./img/gift5.png" ></button>
 				</div>
 				
 			</div>
@@ -455,31 +455,31 @@
 <!-- 導覽列 -->
 	<nav>
 		<div class="stamp">
-			<a href="#"><img src="./img/logo.ico"></a>
+			<a href="./index.html"><img src="./img/logo.ico"></a>
 		</div> <!-- .stamp -->
 			<ul class="optbar">
 					<li class="opt1">
-						<a href="http://tw.yahoo.com" target="_blank">Contact</a>
+						<a href="./contact.html" target="_blank">Contact</a>
 					</li>
 
 					<li class="opt2">
-						<a href="http://www.google.com" target="_blank">Laffite</a>
+						<a href="./product.html" target="_blank">products</a>
 					</li>
 
 					<li class="opt3">
-						<a href="http://www.google.com" target="_blank">Pettrus</a>
+						<a href="./brand.html" target="_blank">brands</a>
 					</li>
 
 					<li class="opt4">
-						<a href="http://www.google.com" target="_blank">Moutton</a>
+						<a href="./tarot.html" target="_blank">tarot</a>
 					</li>
 
 					<li class="opt5">
-					<a href="http://www.google.com" target="_blank">Gift Set</a>
+					<a href="./gift.html" target="_blank">Gift Set</a>
 					</li>
 
 					<li class="opt6">
-					<a href="http://www.google.com" target="_blank"><i class="fas fa-shopping-bag"></i> Quote</a>
+					<a href="#" target="_blank"><i class="fas fa-shopping-bag"></i> Quote</a>
 					</li>
 		
 			</ul><!--.optbar -->
@@ -534,14 +534,14 @@
 
 
    <script>
-		var leftbox = document.getElementsByClassName("left");
-		var bigbox = document.getElementsByClassName("big");
-		var bigimgbox = document.getElementsByClassName("bigimg");
-		var largebox = document.getElementById("large");
-		var big_before = window.getComputedStyle(bigbox[0],'::before');
-		var bigimgbox_width = bigimgbox[0].offsetWidth;
-		var original_left_height = leftbox[0].offsetHeight;
-		var original_big_height = bigbox[0].offsetHeight;
+		// var leftbox = document.getElementsByClassName("left");
+		// var bigbox = document.getElementsByClassName("big");
+		// var bigimgbox = document.getElementsByClassName("bigimg");
+		// var largebox = document.getElementById("large");
+		// var big_before = window.getComputedStyle(bigbox[0],'::before');
+		// var bigimgbox_width = bigimgbox[0].offsetWidth;
+		// var original_left_height = leftbox[0].offsetHeight;
+		// var original_big_height = bigbox[0].offsetHeight;
 
 		function showLarge(e){
 			document.getElementById("large").src = e.target.src;
@@ -561,19 +561,23 @@
 		}
 
 		window.addEventListener("load", init, false);
-		window.onresize = function () {
+		//window.onresize = function () {
 			//  alert("leftbox[0].style.margin-bottom:" + leftbox[0].marginBottom + " bigimgbox_width:"+ bigimgbox_width + " width:"+window.innerWidth + "height:" + window.innerHeight + "img width:" + document.getElementById('large').clientWidth +"img height:" + document.getElementById('large').clientHeight +" leftwidth:"+leftbox[0].offsetWidth+" leftboxheight:"+leftbox[0].offsetHeight+" bigboxwidth:"+bigbox[0].offsetWidth+" leftboxheight:"+bigbox[0].offsetHeight+" bigimgboxwidth:"+bigimgbox[0].offsetWidth+" bigimgboxheight:"+bigimgbox[0].offsetHeight+" largeboxwidth:"+largebox.offsetWidth+" largeboxheight:"+largebox.offsetHeight+" original_left_height:" + original_left_height + " original_big_height:" + original_left_height);
 			// alert(big_before.display);
-			if (window.innerWidth < bigimgbox_width) {
-				leftbox[0].style.marginBottom = "0px";
-				leftbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
-				bigbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
-			} else {
-				leftbox[0].style.marginBottom = "30px";
-				leftbox[0].style.height= original_left_height + 'px';
-				bigbox[0].style.height= original_big_height + 'px';
-			}
-		}
+		// 	if (window.innerWidth < bigimgbox_width) {
+		// 		leftbox[0].style.marginBottom = "0px";
+		// 		leftbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
+		// 		bigbox[0].style.height= bigimgbox[0].offsetHeight + 'px';
+		// 	} else {
+		// 		leftbox[0].style.marginBottom = "30px";
+		// 		leftbox[0].style.height= original_left_height + 'px';
+		// 		bigbox[0].style.height= original_big_height + 'px';
+		// 	}
+		// }
    </script>
+
+
+
+
 </body>
 </html>

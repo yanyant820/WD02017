@@ -6,8 +6,7 @@
     body{
         margin: 0;
         padding: 0;
-    }/* 整體設定 */
-
+    }/* 整體設定 */           
 
     header.thinbanner {
         background-color: #B6937F;
@@ -37,7 +36,8 @@
         max-width: 1520px;
         display: flex;
         flex-direction: column; 
-        justify-content:stretch;
+        justify-content:stretch;     
+        background: rgba(242, 224, 210, 0.5);
     } /* 包住main和aside的大框 */
 
 
@@ -68,30 +68,42 @@ aside.aside{
 
 
 
-/* #drawdeck{
-    margin: 50px auto;
-    width: 100px;
-    height: 200px;
-    list-style: none;
-    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.1);
-    transition: 5s bottom;
-  } */
 
-/* #drawdeck.hidden{
-    position:fixed;
-    bottom:-100px;
-    transition:5s bottom;
-} */
-  /* .card {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1);
-  }
-   */
+button.btn_toggle{
+    margin-left: 40%;
+    background: transparent;
+     vertical-align: center:
+     padding: 2.5px 25px 2.5px 25px;
+     text-decoration: none;
+     border: 1px solid #BAA079;
+     color: #BAA079;
+    width: 100px;
+    height: 25px;
+    border: 1px transparent;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #BAA079;
+    color: #BAA079;
+    margin-top: 20px;
+}
+
+
+button.btn_toggle:active{
+    box-shadow: 2px 2px hsla(240, 0%, 50%, 0.3);
+    transform: translateY(1px);
+    background-color: #b6937f;
+}
+
+button.btn_toggle:hover{
+    text-decoration: none;
+    border: 1px solid #BAA079;
+    background-color: #BAA079;
+    color:white;
+}
+
+
+
  .deck > img {
     /* position: relative; */
     width: 100%;
@@ -99,17 +111,6 @@ aside.aside{
   
 
 
-
-/* #tparty{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#tparty > img {
-    width: 100%;
-} */
 
 
 #tdesc{
@@ -135,6 +136,14 @@ aside.aside{
 }
 
 div.parent_flex{
+    /* width: 50%; */
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  div.parent_flex1{
+    width: 100%;
     border: 1px solid black;
     display: flex;
   }
@@ -158,18 +167,30 @@ div.parent_flex{
   div.down_block.-on{
     background-image: url(../img/tarot.png);
     background-size:cover;
+
   }
+
+
 
 
   div.left_block div.inner_content{
     width: 400px;
   }
+
+
   
+  div.down_block div.inner_content{
+    width: 400px;
+  }
+  
+
+
   div.right_block{
     /* border: 1px solid blue; */
     flex-grow: 1;
     /* width: 20%; */
   }
+
 
 
 
@@ -259,7 +280,7 @@ section.right{
         flex-direction: column;
         flex: 1 0 25%;
         padding: 0 20px;
-        border: 5px solid darkgreen;
+        /* border: 5px solid darkgreen; */
     }
     #featured .fboxs p {
         margin-top: 0;
@@ -272,6 +293,8 @@ section.right{
         text-decoration: none;
         border: 1px solid #BAA079;
         color: #BAA079;
+        margin-bottom: 20px;
+    
     }
 
     .more_info > a:hover{
