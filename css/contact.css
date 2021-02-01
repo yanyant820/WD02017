@@ -273,17 +273,15 @@ main.main{
     /* border: 1px solid black; */
 }
 /* 標題 */
-h2 {
+h2{
     text-align: center;
     padding: 10px 0px 10px 0px;
-    margin-top: 50px;
+    margin: 0;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     border-left: 0px;
     border-right: 0px;
-}
-
-/* 標題 */
+}/* 標題 */
 
 /* 商品圖頁面縮小會往下排 */
 #featured{
