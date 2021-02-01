@@ -9,7 +9,25 @@
     }/* 整體設定 */
 
 
-
+    header.thinbanner {
+        background-color: #B6937F;
+        width: 100%;
+        height: 140;
+    }
+    
+    .ml2 {
+        /* font-weight: 900; */
+        font-size: 4.5em;
+        /* padding-left: 100px; */
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .ml2 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
 
 
 
@@ -113,7 +131,7 @@ aside.aside{
 
 #finalcard{
     height: 150px;
-    width:80px;
+    width:63px;
 }
 
 div.parent_flex{
@@ -122,35 +140,43 @@ div.parent_flex{
   }
 
   div.left_block{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     overflow: hidden;
     transition: flex-basis 1s;
     flex-basis: 0;
     background-image: url(../img/tarot.png);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
   }
+
+  
   div.left_block.-on{
     flex-basis: 400px;
   }
+
+
+  div.down_block.-on{
+    background-image: url(../img/tarot.png);
+    background-size:cover;
+  }
+
+
   div.left_block div.inner_content{
-    /* 這行試著拿掉觀察 */
     width: 400px;
   }
   
   div.right_block{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     flex-grow: 1;
     /* width: 20%; */
   }
 
 
 
-
-
 .choosecard{
-    height: 100px;
-    width:80px;
+    border: 10px solid deeppink;
+    /* height: 300px; */
+    width:500px;
     padding: 0;
     margin-bottom: 20px;
 
@@ -158,10 +184,12 @@ div.parent_flex{
 
 .choosecard > img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
+.btn_toggle{
 
+}
 
 
 

@@ -176,34 +176,25 @@
 			
 			<div id="featured" class="container">					
 	
-				<div class="fboxs" id="fbox1">
+				<div class="fboxs" id="fbox1"> <img src="./img/transparent0.png" width="235" height="235" alt="" />
+					<h3>Fusce ultrices fringilla</h3>
+					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
 					<button class="choosecard" id="chosencard0" style="display:none"><img src="./img/1tarot.jpg" id="0" class = "result" ></button>
-					<div class="change">
-					<h1 class="h1title"><br></h1>
-					<p class="demo"></p>	
-				</div>
-					
 					
 				</div>
 	
 		
-				<div class="fboxs" id="fbox2">
+				<div class="fboxs" id="fbox2"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
+					<h3>Fusce ultrices fringilla</h3>
+					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
 					<button class="choosecard" id="chosencard1" style="display:none" ><img src="./img/1tarot.jpg" id="1" class = "result"></button>
-					<div class="change">
-					<h1 class="h1title"><br></h1>
-					<p class="demo"></p>	
-				</div>
-					
 				</div>
 	
 
-				<div class="fboxs" id="fbox3">
+				<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+					<h3>Fusce ultrices fringilla</h3>
+					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
 					<button class="choosecard" id="chosencard2" style="display:none"><img src="./img/1tarot.jpg" id="2" class = "result"></button>
-					<div class="change">
-					<h1 class="h1title"><br></h1>
-					<p class="demo"></p>
-				</div>
-					
 				</div>
 	
 
@@ -275,6 +266,23 @@
 	<script>
 				var clicks = 0;
 
+				$('.slider').slick({
+					// accessibility:true;
+					arrows: false,
+					centerMode: true,
+					Padding: '0px',
+					
+					//variableWidth: true,
+					fade: true,
+					cssEase: 'linear',
+					dots: true,
+					infinite: true,
+					autoplaySpeed: 1000,
+					slidesToShow: 1,
+					//adaptiveHeight: true,
+					autoplay: true,
+				});
+
 				function get_random(start, size) {
 					return Math.floor(Math.random() * size + start);
 				}
@@ -287,14 +295,11 @@
 
 			function showCard(){
 				var arr_img=['./img/card0.png', './img/transparent0.png', './img/transparent1.png', './img/transparent2.png', './img/transparent3.png', './img/transparent4.png'];
-				var arr_title_desc=['Aries', 'Taurus', 'Gemini', 'Cancer','Leo', 'Virgo'];
-				var arr_demo_desc=['Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
 				var arr_result = document.getElementsByClassName("result");
-				var retry = 100000, i, lotto_num;
+				var retry = 100000, i;
 
 				while (retry > 0) {
-					lotto_num = get_random(0, arr_img.length)
-					this.src = arr_img[lotto_num];
+					this.src = arr_img[get_random(0, arr_img.length)];
 					for (i = 0; i < arr_result.length; i++) {
 
 						if (this.id == arr_result[i].id)
@@ -308,11 +313,6 @@
 						break;
 					retry--;
 				}
-
-				if (!retry)
-					return;
-				document.getElementsByClassName("h1title")[this.id].innerHTML=arr_title_desc[lotto_num];
-				document.getElementsByClassName("demo")[this.id].innerHTML=arr_demo_desc[lotto_num];
 			}
 
 	
