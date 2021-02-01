@@ -13,7 +13,7 @@
     <!-- 字體 -->
 
 
-    <title>Products</title>
+    <title>Product</title>
     <!-- 套用 -->
 	<link rel="stylesheet" href="./css/product.css">
 	<script src="js/jquery.min.js"></script>
@@ -46,123 +46,377 @@
 
 	</header> <!-- header就是輪播圖而已 -->
 
+	<header.thinbanner>
+		<!-- <img src="./"> -->
+		<h1 class="ml2">Product</h1>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	</header>
+
 
 
   	
-	<div class="vessel"> <!-- 包住main和aside的大框  -->
+	<div class="vessel"> <!-- 包住main  -->
+		<!-- <h2 class="chateau">HOT LINKS</h2> -->
 
 
-
-        <h2 class="new_in">New in/Products</h2>
+		<!-- <h2 class="new_in">Product</h2> -->
 		<main class="main">
-			
-			<div id="featured" class="container">					
-	
-				<div class="fboxs" id="fbox1"> <img src="./img/transparent0.png" width="235" height="235" alt="" />
-					<h3>Fusce ultrices fringilla</h3>
-					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<a href="./Details.html"></a>
+			<div class="panel-group">
+				<input type="radio" name="panel-radio" id="radio1" class="panel-control" checked>
+				<input type="radio" name="panel-radio" id="radio2" class="panel-control">
+				<input type="radio" name="panel-radio" id="radio3" class="panel-control">
+				
+				
+				<div class="tab-group">
+					<label for="radio1" class="active">Lafitte</label>
+					<label for="radio2">Pettrus</label>
+					<label for="radio3">Moutton</label>
 				</div>
-	
+				
+				<div class="content-group">
+					<div class="content content1">
+						<div id="featured" class="container">					
 		
-				<div class="fboxs" id="fbox2"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
-					<h3>Fusce ultrices fringilla</h3>
-					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<a href="./Details.html"></a>
-				</div>
-	
-
-				<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
-					<h3>Fusce ultrices fringilla</h3>
-					<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<a href="./Details.html"></a>
-				</div>
-	
-
-				<div class="fboxs" id="fbox4"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
-					<h3>Fusce ultrices fringilla</h3>
-					<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
-					<a href="./Details.html"></a>
-				</div>
-	
-			</div> <!-- <div id="featured" class="container">	-->
-
-			<div class="more_info">
-                <a href="./New in.html">More</a>
-                
-			</div>
-
-		</main> <!-- <main class="main"> -->
-
-
-
+							<div class="fboxs" id="fbox1"> <img src="./img/wine2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/L1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
 			
-			<h2 class="chateau">HOT LINKS</h2>
-			<!-- <button type="button" class="btn_toggle">Wine Tarot</button> -->
-			<aside class="aside">
-				<section class="left">	<!-- 左section -->
-					<div id="tparty"><img src="./img/tparty.png" alt="">左上</div>
-					<div id="tdesc">左下</div>
+							<div class="fboxs" id="fbox3"> <img src="./img/L2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/L3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+							<div class="fboxs" id="fbox1"> <img src="./img/L0.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
 					
-			   </section> <!-- 左section -->
-	
-	
-	
-	
-	
-	
-			   
-			   <section class="right"> <!-- 右section -->
-					<div class="h3title">
-					   <h3>WINE NOT? <br> Online Tarot</h3>
-					</div>
-	
-					<mark>
-	
-							<div class="flexline">
-								<div class="online1">  
-									<div>First Name</div>
-									<input type="text" > 
-								</div>
-	
-								<div class="online2">  
-									<div>Last Name</div>
-									<input type="text">  <!-- value="Your E-mail, Please." -->
-								</div>
-									
+							<div class="fboxs" id="fbox2"> <img src="./img/L4.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
 							</div>
-	
-	
-							<div class="online3">  
-								<span>E-mail</span>
+
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/L2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
 							</div>
-	
-	
-							<div class="online4">  
-								<input type="text1" >  
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/L3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
 							</div>
-	
-	
-							
-							<div class="online5">
-								<a href="./New in.html">Go to Tarot & Get Discount</a>						
+
+
+
+
+							<div class="fboxs" id="fbox1"> <img src="./img/wine2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
 							</div>
-	
+				
 					
-					</mark>
-		
+							<div class="fboxs" id="fbox2"> <img src="./img/L1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/L2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/L3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+
+
+							<div class="fboxs" id="fbox1"> <img src="./img/wine2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/L1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/L2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/L3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+
+
+
+							<div class="fboxs" id="fbox1"> <img src="./img/L0.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/L4.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
 						
-				  
-			   </section>  <!-- 右section -->
-	
-	
-			</aside>
+				
+							<div class="fboxs" id="fbox3" style="visibility: hidden"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4" style="visibility: hidden"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>   
+				
+						</div> <!-- <div id="featured" class="container">	-->
+					</div> <!-- .content content1 -->
 
-		
 
 
+
+
+
+
+
+					<div class="content content2">
+						<div id="featured" class="container">					
+			
+							<div class="fboxs" id="fbox1"> <img src="./img/P1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+<!-- 					
+							<div class="fboxs" id="fbox2"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+							<div class="fboxs" id="fbox1"> <img src="./img/transparent0.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
 					
-	</div><!-- .vessel -->  <!-- 包住main和aside的大框  -->
+							<div class="fboxs" id="fbox2"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>  -->
+				
+						</div> <!-- <div id="featured" class="container">	-->
+					</div>  <!-- <div class="content content2"> -->
+
+
+
+					<div class="content content3">
+						<div id="featured" class="container">					
+			
+							<div class="fboxs" id="fbox1"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent4.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+							<div class="fboxs" id="fbox1"> <img src="./img/wine0.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/wine3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+							<div class="fboxs" id="fbox1"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent4.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+
+
+							<div class="fboxs" id="fbox1"> <img src="./img/wine0.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+					
+							<div class="fboxs" id="fbox2"> <img src="./img/wine3.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox3"> <img src="./img/transparent1.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+				
+			
+							<div class="fboxs" id="fbox4"> <img src="./img/transparent2.png" width="235" height="235" alt="" />
+								<h3>Fusce ultrices fringilla</h3>
+								<p>Muspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+								<a href="./Details.html"></a>
+							</div>
+
+
+
+
+				
+						</div> <!-- <div id="featured" class="container">	-->
+					</div>
+				</div>
+			</div>
+		</main> <!-- <main class="main"> -->
+			
+	</div><!-- .vessel -->  <!-- 包住main  -->
 	
 
 	<!-- footer和導覽列nav一樣在外面玩flex沒被包起來 -->
@@ -174,6 +428,8 @@
 	<!-- footer和導覽列nav一樣在外面玩flex沒被包起來 -->
 
 
+
+	
 
 <!-- 導覽列 -->
 	<nav>
@@ -228,9 +484,31 @@
 			slidesToShow: 1,
 			//adaptiveHeight: true,
 			autoplay: true,
-		});
-		
-
+		});		
 	</script>
+
+
+	<script type="text/javascript">
+		var textWrapper = document.querySelector('.ml2');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: true})
+	.add({
+		targets: '.ml2 .letter',
+		scale: [4,1],
+		opacity: [0,1],
+		translateZ: 0,
+		easing: "easeOutExpo",
+		duration: 20000,
+		delay: (el, i) => 70*i
+	}).add({
+		targets: '.ml2',
+		opacity: 0,
+		duration: 1000,
+		easing: "easeOutExpo",
+		delay: 1000
+	});
+	</script>
+
 </body>
 </html>

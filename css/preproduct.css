@@ -34,36 +34,9 @@
 
 
 
-
-    header.thinbanner {
-        background-color: #B6937F;
-        width: 100%;
-        height: 140;
-    }
-    
-    .ml2 {
-        /* font-weight: 900; */
-        font-size: 4.5em;
-        /* padding-left: 100px; */
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-    }
-    
-    .ml2 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-
-
-
-
-
-
-
 /* 包住main和aside的大框 */
     .vessel{
-        /* border: 1px solid green;  */
+        border: 1px solid green; 
         max-width: 1520px;
         display: flex;
         flex-direction: column; 
@@ -73,8 +46,145 @@
 
 
 
+/* aside在.vessel裡 */
+aside.aside{
+    border: 1px solid yellow; 
+    max-width: 1520px;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid  purple; */
+}
 
-/* main在.vessel中 */
+
+
+
+ section.left{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    height:700px;
+    /* background-image:url("./img/tparty.jpg"); */
+    /* background-image: url(../img/tparty.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size:contain; */
+    border:  1px solid black;
+    
+}
+
+
+
+
+
+
+#tparty img {
+    width:100%;
+    height:100%;
+    border: 1px solid blue;
+    /* object-fit:cover; */
+}
+
+
+
+#tdesc{
+    width:100%;
+    height:50%;
+    border: 1px deeppink;
+    background-color: black;
+}
+
+
+
+
+
+
+section.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:850px;
+    /* background-color: white; */
+    opacity: .8;
+    border: 5px deeppink;
+    padding: 5px;
+}
+
+
+
+.h3title{
+    border:1px solid #BAA079;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 20px;
+}
+
+h3{
+    color:#BAA079;
+}
+
+
+mark{
+    background-color: white;
+}
+
+
+
+.flexline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flexline div{
+    color: #BAA079;
+   
+}
+
+input[type="text"]{
+    caret-color:#BAA079;
+    border: 1px solid #BAA079;
+    outline:none;
+    padding:5px 15px;
+}
+
+.online3 > span{
+    color: #BAA079;
+}
+
+
+.online5 > a{
+    border: 1px solid #BAA079;
+    color: #BAA079;
+    background-color: white;
+    font-size: 16px;
+    padding:2.5px 69.5px 2.5px 69.5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.online5 > a:hover{
+    color: white;
+    background-color: #BAA079;
+}
+
+
+
+input[type="text1"]{
+    caret-color:#BAA079;
+    width: 100%;
+    border: 1px solid #BAA079;
+    outline:none;
+    margin-bottom: 20px; 
+    padding:5px 15px
+
+}
+
+
+
+
+/* main在.vessel中的下面 */
 
     main.main{    
         display: flex;
@@ -87,78 +197,61 @@
     h2{
         text-align: center;
         padding: 10px 0px 10px 0px;
-        margin-top: 50px;
+        margin: 0;
         border-top: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
         border-left: 0px;
         border-right: 0px;
-
     }/* 標題 */
 
+    /* 商品圖頁面縮小會往下排 */
+    #featured{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* 商品圖頁面縮小會往下排 */
 
-      .panel-group{
+    #featured.container {
         width: 100%;
+        max-width: 1300px;
     }
-
-      .panel-control {
-        position:absolute;
-        opacity:0;
-      }
-
-      .tab-group{
+    #featured .fboxs {
         display: flex;
-        justify-content: space-around;
-      }
-
-      .tab-group label {
-        width: 33%;
-        display:inline-block;
-        padding: 10px 30px;
-        border:1px solid #BAA079;
-        border-bottom:none;
-        background-color: white;
-        bottom:-1px;
-        position:relative;
-        color: #BAA079;
-        /* border-top-left-radius:10px;
-        border-top-right-radius: 10px; */
-        text-align: center;
-      }
-
-      .content-group {
-        border:1px solid #ccc;
-      }
-
-      .content{
-        display:none;
-      }
-
-      
-      #radio1:checked ~ .tab-group [for="radio1"],
-      #radio2:checked ~ .tab-group [for="radio2"],
-      #radio3:checked ~ .tab-group [for="radio3"]{background-color: #BAA079; color: white; }
-      
-      /* #radio2:checked~ .content-group .content1{display:none}
-      #radio3:checked~ .content-group .content1{display:none} */
-      
-      #radio1:checked ~ .content-group .content1,
-      #radio2:checked ~ .content-group .content2,
-      #radio3:checked ~ .content-group .content3 {display:block}
-
-      #featured{
-          display: flex;
-          flex-wrap: wrap;
-      }
-
-      #featured .fboxs {
-        flex: 1 0 25%;
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
+        flex: 1 0 25%;
+        padding: 0 20px;
+    }
+    #featured .fboxs p {
+        margin-top: 0;
+    }
+
+ 
+    .more_info > a{  /* 按鈕a */
+        margin-bottom: 10px;
+        padding: 2.5px 25px 2.5px 25px;
+        text-decoration: none;
+        border: 1px solid #BAA079;
+        color: #BAA079;
+    }
+
+    .more_info > a:hover{
+        text-decoration: none;
+        border: 1px solid #BAA079;
+        background-color: #BAA079;
+        color:white;
     }
 
 
-/* main在.vessel裡 */
+    /* main在.vessel裡 */
+
+
+
+
+
+
 
 
 
