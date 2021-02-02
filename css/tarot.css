@@ -91,6 +91,21 @@ aside.aside{
         transform: rotate(90deg);
     }
 
+    /* .inner_content1  button{
+        height: 150px;
+        width:2px;
+        background-color: transparent;
+        outline: transparent;
+        margin: 0;
+    }
+      
+    
+    #finalcard{
+        height: 150px;
+        width:20px;
+    } */
+    
+
 
 }
 
@@ -179,7 +194,7 @@ button.btn_toggle:hover{
 
 .inner_content1  button{
     height: 150px;
-    width:5px;
+    width:3px;
     background-color: transparent;
     outline: transparent;
     margin: 0;
@@ -191,7 +206,7 @@ button.btn_toggle:hover{
 
 #finalcard{
     height: 150px;
-    width:63px;
+    width:60px;
 }
 
 div.parent_flex{
