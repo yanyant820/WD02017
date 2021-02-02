@@ -32,7 +32,7 @@
 
 /* 包住main和aside的大框 */
     .vessel{
-        border: 1px solid green; 
+        /* border: 1px solid green;  */
         max-width: 1520px;
         display: flex;
         flex-direction: column; 
@@ -45,7 +45,7 @@
 
 /* aside在.vessel裡 */
 aside.aside{
-    border: 1px solid yellow; 
+    /* border: 1px solid yellow;  */
     max-width: 1520px;
     height: 33%;
     display: flex;
@@ -106,7 +106,7 @@ aside.aside{
     flex-direction: column;
     width:60%;
     height:50%;
-    border:  10px solid black;
+    /* border:  10px solid black; */
     
 }
 
@@ -199,14 +199,14 @@ button.btn_toggle:hover{
 
 div.parent_flex{
     /* width: 50%; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: nowrap;
   }
 
   div.parent_flex1{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
   }
 
