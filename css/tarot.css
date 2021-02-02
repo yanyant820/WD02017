@@ -50,9 +50,50 @@ aside.aside{
     height: 33%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     /* border: 1px solid  purple; */
 }
+
+@media (max-width:550px){
+     aside.aside{
+       
+        display: flex;
+        align-items: flex-start;
+        /* flex-wrap: wrap; */
+      
+    }
+
+ 
+
+
+    .inner_content1{
+        /* margin: 50px; */
+        /* font-size: 50px; */
+        /* text-align: center; */
+        background-color:rgba(242, 224, 210, 0.5);
+        /* width: 200px; */
+        height: 180px;
+        /* line-height: 140px; */
+        border: 15px solid #f0f0f0;
+        color: #fff;
+        -webkit-transition: -webkit-transform 2s ease-out;
+        -moz-transition: -moz-transform 2s ease-out;
+        transition: transform 5s ease-out;
+    }
+
+    .inner_content1:hover{
+        background-color: #0071b8;
+        border: 15px solid #c9dfec;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(90deg);
+    }
+
+
+}
+
 
 
 
@@ -62,7 +103,7 @@ aside.aside{
     flex-direction: column;
     width:60%;
     height:50%;
-    border:  1px solid black;
+    border:  10px solid black;
     
 }
 
@@ -70,23 +111,29 @@ aside.aside{
 
 
 button.btn_toggle{
-    margin-left: 40%;
+    /* margin-left: 40%; */
     background: transparent;
-     vertical-align: center:
-     padding: 2.5px 25px 2.5px 25px;
+    vertical-align: center:
+    padding: 2.5px 25px 2.5px 25px;
      text-decoration: none;
-     border: 1px solid #BAA079;
-     color: #BAA079;
     width: 100px;
     height: 25px;
-    border: 1px transparent;
-    color: white;
+    /* border: 1px transparent; */
+    /* color: white; */
     outline: none;
     text-decoration: none;
     border: 1px solid #BAA079;
     color: #BAA079;
     margin-top: 20px;
+    padding: 2.5px 25px 2.5px 25px;
+    
 }
+
+.inner_content1 button{
+    width: 5px;
+    height: 150px;
+}
+
 
 
 button.btn_toggle:active{
@@ -130,6 +177,18 @@ button.btn_toggle:hover{
 }
 
 
+.inner_content1  button{
+    height: 150px;
+    width:5px;
+    background-color: transparent;
+    outline: transparent;
+    margin: 0;
+}
+
+
+
+
+
 #finalcard{
     height: 150px;
     width:63px;
@@ -153,10 +212,14 @@ div.parent_flex{
     overflow: hidden;
     transition: flex-basis 1s;
     flex-basis: 0;
-    background-image: url(../img/tarot.png);
+    /* background-image: url(../img/tarot.png); */
     background-size:cover;
     background-repeat: no-repeat;
   }
+
+
+
+
 
   
   div.left_block.-on{
@@ -165,8 +228,10 @@ div.parent_flex{
 
 
   div.down_block.-on{
-    background-image: url(../img/tarot.png);
-    background-size:cover;
+    /* background-image: url(../img/tarot.png); */
+    /* background-size:cover; */
+    background-repeat: no-repeat ;
+    flex-basis: 400px;
 
   }
 
@@ -174,15 +239,34 @@ div.parent_flex{
 
 
   div.left_block div.inner_content{
-    width: 400px;
+    width: 400px; 
+  }
+
+  .inner_content1{
+    flex-basis: 400px;
   }
 
 
   
-  div.down_block div.inner_content{
+  /* div.down_block div.inner_content{
     width: 400px;
+    background-image: url(../img/tarot.png);
+    background-size:cover;
+  } */
+
+
+  .inner_content{
+    width: 400px;
+    background-image: url(../img/tarot.png);
+    background-size:cover;
   }
   
+
+  .inner_content1{
+    width: 400px;
+    background-image: url(../img/tarot.png);
+    background-size:contain;
+  }
 
 
   div.right_block{
