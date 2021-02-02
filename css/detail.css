@@ -64,7 +64,7 @@ header.thinbanner {
 
 /* 包住main和aside的大框 */
 .vessel {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     max-width: 1520px;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ header.thinbanner {
 
 /* aside在.vessel裡 */
 aside.aside {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     max-width: 100%;
     height: 33%;
     display: flex;
@@ -161,7 +161,7 @@ section.rightend {
 }
 
 .bigimg {
-    width: 100%;
+    /* width: 50%; */
     /* height: 100%; */
     /* border: 10px solid #a08e84; */
     border: 10px solid  #BAA079;
@@ -227,7 +227,6 @@ div.right {
     border: 1px solid #BAA079;
     color: #BAA079;
     background-color: rgba(160, 142, 132 1);
-
 }
 
 .add_minus {
@@ -357,7 +356,7 @@ div.right {
 
 article {
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: center;
     /* border: 5px solid red; */
@@ -398,10 +397,6 @@ article {
     margin: 0px;
     color: grey;
 }
-
-
-
-
 
 
 
