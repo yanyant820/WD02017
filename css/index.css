@@ -11,7 +11,7 @@ body{
 
 /* 輪播圖設定 */
 .slimg{
-    max-width: 1520px;
+    max-width: 100%;
     height:700px;
     margin: 0;
 }
@@ -37,6 +37,7 @@ body{
 /* 包住main和aside的大框 */
 .vessel{
     /* border: 1px solid green;  */
+    margin: 0 auto;
     max-width: 1520px;
     display: flex;
     flex-direction: column; 
@@ -55,7 +56,6 @@ aside.aside{
     justify-content: center;
     flex-wrap: wrap;
     /* background: rgba(242, 224, 210, 0.5); */
-
 }
 
 
@@ -70,7 +70,6 @@ section.left{
     /* background-repeat: no-repeat; */
     /* background-size:contain; */
     /* border:  1px solid black; */
-
 }
 
 
@@ -108,10 +107,6 @@ section.left{
     /* border: 1px solid deeppink; */
     background-image: url(../img/certpic.png);
     background-size:cover;
-}
-
-#tparty1 img{
-
 }
 
 
@@ -255,7 +250,6 @@ width: 300px;
 
 
 
-
 .online5 input:hover{
     color: white;
     background-color: #BAA079;
@@ -276,7 +270,7 @@ main.main{
 h2 {
     text-align: center;
     padding: 10px 0px 10px 0px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     border-left: 0px;
@@ -343,7 +337,7 @@ footer.footer{
 display: flex;
 justify-content: center;
 height: 100px;
-/* max-width: 1520px; */
+width: 100%;
 /* border: 1px deeppink; */
 background-color:rgba(128, 128, 128, 0.192);
 color:#BEBEBE;
@@ -396,7 +390,7 @@ padding: 15px;
 @media (max-width:582px){
 
 footer.footer{
-    width:100%;
+    max-width:100%;
 }
 
 .warning{
@@ -532,7 +526,7 @@ z-index: 1;
 }
 
 ul.optbar{
-max-width: 1520px;
+max-width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;

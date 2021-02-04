@@ -199,14 +199,14 @@ button.btn_toggle:hover{
 
 div.parent_flex{
     /* width: 50%; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     flex-wrap: nowrap;
   }
 
   div.parent_flex1{
     width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
   }
 
